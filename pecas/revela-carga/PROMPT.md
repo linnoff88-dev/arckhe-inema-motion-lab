@@ -1,13 +1,13 @@
 # Revela carga
 
-Uma tela de carregamento em que a marca INEMA, inteira desde o primeiro quadro, enche de âmbar de baixo para cima enquanto o contador vai de 000 a 100, e no fim tudo vira a transiçêo que revela a página inicial escura.
+Uma tela de carregamento em que a marca ARCKHÉ, inteira desde o primeiro quadro, enche de âmbar de baixo para cima enquanto o contador vai de 000 a 100, e no fim tudo vira a transiçêo que revela a página inicial escura.
 
 ## Prompt
 
 ```text
-Construa uma tela de carregamento que vira transiçêo de página: a marca INEMA aparece inteira
+Construa uma tela de carregamento que vira transiçêo de página: a marca ARCKHÉ aparece inteira
 e vai enchendo de âmbar enquanto um contador grande vai de 000 a 100; ao chegar a 100, a marca
-pulsa e some, seis colunas sobem e revelam a página inicial do INEMA.CLUB (escura), com o título
+pulsa e some, seis colunas sobem e revelam a página inicial do ARCKHÉ AI (escura), com o título
 entrando palavra por palavra e uma capivara chegando para acenar.
 
 Aparência:
@@ -28,9 +28,9 @@ Aparência:
 - Contador no canto inferior direito, JetBrains Mono, clamp(64px, 15vw, 180px), números
   tabulares, três dígitos; zeros à esquerda com 20% de opacidade; um "%" pequeno em âmbar.
 - Linha de progresso de 2 px em âmbar, da borda esquerda até o começo do contador.
-- Rótulos mono nos cantos de cima: "INEMA.CLUB · abrindo" e "cursos gratuitos de IA".
+- Rótulos mono nos cantos de cima: "ARCKHÉ AI · abrindo" e "cursos gratuitos de IA".
 - Página revelada: fundo escuro (gradiente #111114 para #0b0b0d com um brilho âmbar suave
-  atrás da capivara). Barra de navegaçêo com linha fina embaixo (marca INEMA.CLUB com ponto
+  atrás da capivara). Barra de navegaçêo com linha fina embaixo (marca ARCKHÉ AI com ponto
   âmbar; Cursos, Lives, Buscas, VIP em creme 60%). Rótulo âmbar "Cursos gratuitos de IA · 2026",
   título gigante creme "Pronto quando você estiver." (Sora 800, ponto final em âmbar, até 12,5%
   da altura), linha de apoio em creme 60%, botêo "Começar agora" (pílula âmbar, texto escuro) e

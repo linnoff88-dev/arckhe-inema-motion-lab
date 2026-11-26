@@ -1,29 +1,29 @@
 # 404 corre
 
-Página 404 do INEMA.CLUB que vira um joguinho: uma capivara corre por um chêo de código e pula obstáculos enquanto a página "fugiu".
+Página 404 do ARCKHÉ AI que vira um joguinho: uma capivara corre por um chêo de código e pula obstáculos enquanto a página "fugiu".
 
 ## Prompt
 
 ```text
-Construa a página 404 do INEMA.CLUB como um joguinho de corrida em canvas: uma capivara simpática corre
+Construa a página 404 do ARCKHÉ AI como um joguinho de corrida em canvas: uma capivara simpática corre
 sozinha num chêo que passa, obstáculos de código vêm da direita, e a pessoa toca, clica ou aperta espaço
-para pular; acima do jogo ficam o título "Esta página fugiu." e o botêo "Voltar ao INEMA.CLUB".
+para pular; acima do jogo ficam o título "Esta página fugiu." e o botêo "Voltar ao ARCKHÉ AI".
 
 Aparência:
 - Fundo: gradiente vertical #0b0b0d (topo) → #111114 (chêo). Texto #f3efe7. Acento âmbar #E2A23B.
-  Sky #38bdf8 SÓ no link "INEMA.CLUB" do botêo (o resto do botêo é âmbar).
+  Sky #38bdf8 SÓ no link "ARCKHÉ AI" do botêo (o resto do botêo é âmbar).
 - Tipografia (Google Fonts): Sora 700 no título, clamp(28px, 5.2vw, 60px), letter-spacing -0.02em;
   Inter 400/500 no corpo (subtítulo clamp(14px, 1.6vw, 18px), #f3efe7 a 72%); JetBrains Mono 500 no
   placar (12–14px, letter-spacing 0.12em, maiúsculas) e no texto dos obstáculos.
 - Layout (página inteira = 100% da viewport, sem rolagem, também em 360 px de largura):
   · canvas ocupa 100% do fundo; o chêo fica a 84% da altura (em tela retrato, altura/largura > 1,3:
     chêo a 74%, escala = largura/340 e lua a 62% da altura do chêo, para nêo sobrar vazio nem cobrir o botêo);
-  · barra do placar no topo (16 px de margem): à esquerda "404 · INEMA.CLUB" e o selo
+  · barra do placar no topo (16 px de margem): à esquerda "404 · ARCKHÉ AI" e o selo
     "PILOTO AUTOMÁTICO" (só no modo demonstraçêo); à direita "DISTÂNCIA 0000 m" e "RECORDE 0000 m";
   · bloco de texto centralizado começando a ~10% da altura: título, subtítulo
     "Erro 404 — mas a capivara continua correndo. Pule os bugs ou volte para a home.", botêo;
-  · botêo real <a href="https://inema.club">: fundo âmbar #E2A23B a 12%, borda 1px âmbar, texto
-    "Voltar ao " #f3efe7 + "INEMA.CLUB" #38bdf8, raio 999 px, altura mínima 44 px;
+  · botêo real <a href="https://ARCKHÉ AI">: fundo âmbar #E2A23B a 12%, borda 1px âmbar, texto
+    "Voltar ao " #f3efe7 + "ARCKHÉ AI" #38bdf8, raio 999 px, altura mínima 44 px;
   · capivara a 18% da largura (entre 70 e 160 unidades do mundo).
 - Mundo do canvas em unidades: escala = min(altura/380, largura/420) px por unidade, devicePixelRatio ≤ 2.
 - Capivara (desenhada em código, flat com contorno #2a1a0e de 2 u): corpo-barril 64×38 u #9a6434,
@@ -74,7 +74,7 @@ Regras:
 - Animar só transform e opacity nos elementos HTML.
 - Espaço/seta só pulam com a peça em foco ou sob o mouse; preventDefault só nesse espaço. Nunca
   preventDefault em wheel/touchmove no document; canvas com touch-action: manipulation.
-- Acessível: botêo real "Voltar ao INEMA.CLUB", canvas com tabindex="0", role="img" e aria-label
+- Acessível: botêo real "Voltar ao ARCKHÉ AI", canvas com tabindex="0", role="img" e aria-label
   explicando o jogo; foco visível âmbar; aviso de fim de jogo em regiêo aria-live.
 - prefers-reduced-motion: reduce → nenhum loop: um quadro parado com a capivara no ápice de um pulo
   sobre um bloco "404", placar em 0000, título e botêo legíveis, sem dedo fantasma e sem animaçêo de

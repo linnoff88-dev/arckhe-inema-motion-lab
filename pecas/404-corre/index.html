@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Esta página fugiu · 404 · INEMA.CLUB</title>
-<meta name="description" content="Página 404 do INEMA.CLUB: uma capivara corre e pula obstáculos de código.">
+<title>Esta página fugiu · 404 · ARCKHÉ AI</title>
+<meta name="description" content="Página 404 do ARCKHÉ AI: uma capivara corre e pula obstáculos de código.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@500;700&family=Sora:wght@700&display=swap" rel="stylesheet">
@@ -88,7 +88,7 @@
 
   <div class="hud in d3" aria-hidden="true">
     <div class="l">
-      <span class="dim">404 · INEMA.CLUB</span>
+      <span class="dim">404 · ARCKHÉ AI</span>
       <span class="chip" id="chip">Piloto automático</span>
     </div>
     <div class="r">
@@ -100,7 +100,7 @@
   <div class="copy">
     <h1 class="in">Esta página fugiu.</h1>
     <p class="sub in d1">Erro 404 — mas a capivara continua correndo. Pule os bugs ou volte para a home.</p>
-    <a class="back in d2" href="https://inema.club"><span class="arw" aria-hidden="true">←</span><span>Voltar ao <span class="site">INEMA.CLUB</span></span></a>
+    <a class="back in d2" href="https://ARCKHÉ AI"><span class="arw" aria-hidden="true">←</span><span>Voltar ao <span class="site">ARCKHÉ AI</span></span></a>
   </div>
 
   <div class="over" id="over" aria-hidden="true">
@@ -143,7 +143,7 @@
 
   // ---------- recorde ----------
   let record = 0;
-  try { record = parseInt(localStorage.getItem('inema404-recorde') || '0', 10) || 0; } catch (e) { record = 0; }
+  try { record = parseInt(localStorage.getItem('ARCKHÉ404-recorde') || '0', 10) || 0; } catch (e) { record = 0; }
   const pad = n => String(Math.min(9999, Math.floor(n))).padStart(4, '0');
   elRec.textContent = pad(record);
 
@@ -355,7 +355,7 @@
       const m = Math.floor(S.dist / METER);
       if (m > record) {
         record = m;
-        try { localStorage.setItem('inema404-recorde', String(record)); } catch (e) {}
+        try { localStorage.setItem('ARCKHÉ404-recorde', String(record)); } catch (e) {}
       }
     }
   }
@@ -659,7 +659,7 @@
   else window.addEventListener('resize', () => { resize(); if (reduced) staticScene(); });
 
   // gancho de teste
-  window.__inema404 = {
+  window.__ARCKHÉ404 = {
     get state() { return S.state; }, get distance() { return Math.floor(S.dist / METER); },
     get crashes() { return S.crashes; }, get jumps() { return S.jumps; }, get jumping() { return !S.grounded; },
     get autopilot() { return S.autopilot; }, get running() { return !!raf; }, get speed() { return S.speed; }

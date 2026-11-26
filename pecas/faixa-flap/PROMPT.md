@@ -6,18 +6,18 @@ Um quadro de embarque de aeroporto (flap mecânico), com avisos, próximas lives
 
 ```text
 Construa o cabeçalho de um site como um quadro de partidas de aeroporto, com letras de flap mecânico. O quadro mostra
-as próximas lives do INEMA.CLUB, e o menu também é feito de tiles.
+as próximas lives do ARCKHÉ AI, e o menu também é feito de tiles.
 
 Aparência:
 - Fundo #0b0b0d com vinheta. Placa #121212 com listras finas, raio 14 px, sombra profunda, largura máxima de 1140 px.
-- Topo: um círculo amarelo #FFD33D com a letra "i" e a marca "INEMA.CLUB" em Sora 800, ".CLUB" em #E2A23B.
+- Topo: um círculo amarelo #FFD33D com a letra "i" e a marca "ARCKHÉ AI" em Sora 800, ".CLUB" em #E2A23B.
 - Cada tile tem fundo #1E1E1E, linha central escura de 1 px, texto em JetBrains Mono 500 com 62% da altura do tile.
   Cores: horários e status #FFD33D; títulos e o cabeçalho "PRÓXIMAS LIVES" em #F3EEE2; rótulos de coluna em #a69d90;
   avisos em #E2A23B.
 - Tamanho do tile: largura calculada pela tela (máximo 1100 px no total, espaço de 2 px entre tiles), altura de 1,5 ×
   largura. Em telas de 640 px ou mais: quatro colunas (HORA 5, TEMA 22, SALA 5, STATUS 14) e relógio "hh:mm" no
   cabeçalho. Em telas menores: duas colunas (TEMA 14, STATUS 10), sem relógio e sem horário.
-- Faixa de avisos: 26 tiles em #E2A23B. Mensagens: "CURSOS GRÁTIS INEMA.CLUB", "LIVES TODA SEMANA NO AR" e
+- Faixa de avisos: 26 tiles em #E2A23B. Mensagens: "CURSOS GRÁTIS ARCKHÉ AI", "LIVES TODA SEMANA NO AR" e
   "PRATIQUE COM AGENTES".
 - Lâmpada de status ao lado de cada evento: apagada (#3a2b12), acesa em âmbar com brilho (em "ENTRANDO" ela pisca).
 - Menu: quatro itens (CURSOS, EVENTOS, BUSCAS, VIP) de oito tiles cada, em #f3efe7.

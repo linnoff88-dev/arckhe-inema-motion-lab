@@ -10,7 +10,7 @@ até cobrir a tela, os itens sobem de uma máscara, e uma prévia mostra a arte 
 segue o ponteiro; no toque e em telas estreitas ela fica num lugar fixo abaixo da lista, sem cobrir nada.
 
 Aparência:
-- Fundo #0b0b0d com degradê radial até #111114. Marca "INEMA.CLUB" em Sora 800 18 px, ".CLUB" em #E2A23B,
+- Fundo #0b0b0d com degradê radial até #111114. Marca "ARCKHÉ AI" em Sora 800 18 px, ".CLUB" em #E2A23B,
   no canto superior esquerdo.
 - Botêo pill de 46 px de altura, fundo #f3efe7, texto #0b0b0d em Inter 600. Dentro: duas barras de 2 px que
   viram um X, e o rótulo "Menu" que rola para "Fechar".
@@ -19,7 +19,7 @@ Aparência:
 - Mascote: capivara em SVG parada no canto inferior direito, marrom #9b6b43, com sombra #7a5232 e olho #17120f.
 - Veu: círculo #E2A23B. Menu: texto #17120f. Itens: número em JetBrains Mono 500 e nome em Sora 800
   com clamp(2,3rem, 9vw, 6,6rem), cada item com 14 vh de altura. Itens: Cursos, Eventos, Buscas, Comunidade.
-- Rodapé do menu, em JetBrains Mono 500, caixa alta, 12 px: "inema.club" à esquerda, três pills com contorno
+- Rodapé do menu, em JetBrains Mono 500, caixa alta, 12 px: "ARCKHÉ AI" à esquerda, três pills com contorno
   (YouTube, Instagram, Telegram) no centro e o relógio de Brasília à direita ("hh:mm:ss · Brasília").
 - Cartêo de prévia de 300 px (4:3, raio 14 px, fundo #17120f). Cada item tem uma arte desenhada em SVG:
   cartões empilhados, grade de quadrados, alvo com lupa e bolhas com a capivara.

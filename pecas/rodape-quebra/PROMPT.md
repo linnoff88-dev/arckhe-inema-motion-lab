@@ -1,6 +1,6 @@
 # Rodapé quebra
 
-Um rodapé que vira jogo de quebrar tijolos: cada tijolo é um link do ecossistema INEMA, e quando quebra o rótulo voa até a bandeja e vira link de verdade.
+Um rodapé que vira jogo de quebrar tijolos: cada tijolo é um link do ecossistema ARCKHÉ, e quando quebra o rótulo voa até a bandeja e vira link de verdade.
 
 ## Prompt
 
@@ -16,7 +16,7 @@ Aparência:
 - Tipografia (Google Fonts): marca Sora 800; rótulos JetBrains Mono 500 a partir de 12 px;
   corpo e tijolos Inter (links 15 px no desktop, 14 px no celular). Nenhum texto abaixo de
   12 px.
-- Topo enxuto: "INEMA.CLUB" à esquerda; à direita o modo em mono âmbar ("piloto
+- Topo enxuto: "ARCKHÉ AI" à esquerda; à direita o modo em mono âmbar ("piloto
   automático" / "você joga", some no celular) e três vidas (quadradinhos âmbar de 10 px).
 - Parede 4 x 5, uma linha por grupo (cursos, eventos, buscas, clube), cada linha de um tom
   da marca: âmbar #E2A23B, dourado #F2C76E, creme #f3efe7 e âmbar escuro #C9821F. Tijolos
@@ -27,7 +27,7 @@ Aparência:
   desktop e "arraste para mover · toque lança" em tela de toque (media query hover: none).
 - Embaixo do canvas, as bandejas como um rodapé comum: título do grupo em mono âmbar 12 px
   e os links em texto corrido (Inter, creme a 55%). Link ganho fica creme cheio com um ponto
-  âmbar à esquerda. Linha fina e a barra final: "© 2026 INEMA.CLUB · conteúdo aberto e
+  âmbar à esquerda. Linha fina e a barra final: "© 2026 ARCKHÉ AI · conteúdo aberto e
   gratuito" e "Os links funcionam mesmo sem jogar".
 - Celular (até 760 px): composiçêo própria. A arena ocupa o espaço que sobra (mínimo 320 px)
   e os tijolos ficam mais altos (30 a 40 px) e com margens menores para preencher a largura;

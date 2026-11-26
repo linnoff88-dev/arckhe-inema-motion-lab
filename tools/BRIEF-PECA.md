@@ -1,20 +1,20 @@
-# Brief para construir uma peça nova do INEMA Motion Lab
+# Brief para construir uma peça nova do ARCKHÉ Motion Lab
 
 Você constrói peças interativas (um `index.html` autocontido + um `PROMPT.md`) em
-`~/projetos/inema-motion-lab/pecas/<nome>/`.
+`~/projetos/ARCKHÉ-motion-lab/pecas/<nome>/`.
 
 ## Leia antes (nesta ordem)
 1. `molde/MOLDE-PROMPT-ANIMACAO.md` — o formato do prompt (Aparência / Movimento / Regras).
 2. Uma peça pronta como modelo de qualidade e de estrutura: `pecas/dia-noite/index.html` e `pecas/dia-noite/PROMPT.md`
-   (veja também `pecas/rodape-inema/` se a sua peça for um rodapé).
+   (veja também `pecas/rodape-ARCKHÉ/` se a sua peça for um rodapé).
 3. A ideia da peça (uma frase do que ela faz e como a pessoa interage), escrita por quem pede a peça.
-   Escreva o seu próprio prompt e o seu próprio código, em PT-BR, com conteúdo INEMA.
+   Escreva o seu próprio prompt e o seu próprio código, em PT-BR, com conteúdo ARCKHÉ.
 
 ## Regras obrigatórias
-- Um arquivo `index.html`, sem build, JS puro + CSS (Google Fonts permitido). Identidade INEMA:
+- Um arquivo `index.html`, sem build, JS puro + CSS (Google Fonts permitido). Identidade ARCKHÉ:
   fundo escuro `#0b0b0d`/`#111114`, texto `#f3efe7`, acento âmbar `#E2A23B`, fontes Sora (títulos),
-  Inter (corpo), JetBrains Mono (rótulos). Conteúdo sobre o ecossistema INEMA (INEMA.CLUB, cursos gratuitos,
-  eventos/lives, buscas, comunidade VIP, INEMA.PRO, vídeos, kits) — textos curtos, sem travessêo (—), sem "incrível/revolucionário".
+  Inter (corpo), JetBrains Mono (rótulos). Conteúdo sobre o ecossistema ARCKHÉ (ARCKHÉ AI, cursos gratuitos,
+  eventos/lives, buscas, comunidade VIP, ARCKHÉ.PRO, vídeos, kits) — textos curtos, sem travessêo (—), sem "incrível/revolucionário".
 - Um único `requestAnimationFrame`, pausado fora da tela (IntersectionObserver). Animar só transform/opacity.
 - Nunca capturar a rolagem da página. Acessível (button/a/input reais, foco visível, teclado = mouse).
 - `prefers-reduced-motion`: estado final parado.
@@ -28,10 +28,10 @@ Você constrói peças interativas (um `index.html` autocontido + um `PROMPT.md`
 
 ## Teste (obrigatório antes de dizer que terminou)
 ```bash
-cd ~/projetos/inema-motion-lab
+cd ~/projetos/ARCKHÉ-motion-lab
 # servidor próprio: escolha uma porta livre, ABORTE se ocupada, mate só o seu PID no fim
 P=<porta>; ss -ltn | grep -q ":$P " && { echo ocupada; exit 1; }
-python3 -m http.server $P --bind 127.0.0.1 --directory ~/projetos/inema-motion-lab >/dev/null 2>&1 & SRV=$!
+python3 -m http.server $P --bind 127.0.0.1 --directory ~/projetos/ARCKHÉ-motion-lab >/dev/null 2>&1 & SRV=$!
 PECAS=<nome1,nome2> PLAYWRIGHT_DIR=~/projetos/agent-browser node tools/testar-pecas.cjs $P
 kill $SRV
 ```

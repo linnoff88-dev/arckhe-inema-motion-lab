@@ -14,14 +14,14 @@ Aparência:
   #f3efe7, texto secundário a 62%, acento âmbar #E2A23B.
 - Tipografia (Google Fonts): título Sora 800; botêo Sora 600; corpo Inter; rótulos JetBrains
   Mono 500, 11 px, caixa alta.
-- Topo (cerca de 55% da altura), duas colunas: à esquerda o rótulo "Novidades · INEMA.CLUB",
+- Topo (cerca de 55% da altura), duas colunas: à esquerda o rótulo "Novidades · ARCKHÉ AI",
   o título "Plante uma ideia." (ponto em âmbar), uma linha de apoio e o formulário: campo com
   só a linha de baixo (rótulo "Seu e-mail") e o botêo pílula âmbar "Quero receber", com uma
   segunda pílula coral #E86A4A deslocada 3 px por trás, como impressêo fora de registro.
   À direita, três colunas de links: Aprender (Cursos, Buscas, Guias), Ao vivo (Lives, Áreas,
   Notícias), Junto (VIP, PRO, Kits).
 - Jardim embaixo (no mínimo 38% da altura): um chêo com linha verde #6f8f4e e solo de
-  pontinhos âmbar em meio-tom. Barra final escura com "© 2026 INEMA.CLUB · conteúdo aberto e
+  pontinhos âmbar em meio-tom. Barra final escura com "© 2026 ARCKHÉ AI · conteúdo aberto e
   gratuito".
 - Flores em SVG, cinco espécies escolhidas pelo código da letra: margarida (11 pétalas
   creme, miolo âmbar), tulipa (cálice coral), papoula (5 pétalas âmbar e dourado, miolo
@@ -46,7 +46,7 @@ Movimento:
    nenhum e-mail foi enviado." Depois de 4 s o campo se apaga da direita para a esquerda
    (uma letra a cada 60 ms) e as flores recolhem junto; o rótulo volta.
 5. Modo demonstraçêo: até alguém digitar ou mexer o mouse, um cursor fantasma digita
-   "voce@inema.club" (110 ms por letra, com cursor de texto piscando desenhado à parte),
+   "voce@ARCKHÉ AI" (110 ms por letra, com cursor de texto piscando desenhado à parte),
    clica em "Quero receber" e repete depois da festa. Ao parar, o campo é limpo. Com ?demo=1
    nunca para.
 

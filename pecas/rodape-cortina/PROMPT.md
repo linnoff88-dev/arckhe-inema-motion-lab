@@ -1,33 +1,33 @@
 # Rodapé cortina
 
-Rodapé de site revelado como cortina: a página clara sobe e encolhe, e por baixo aparece um rodapé escuro com a marca "inema" nascendo sobre o horizonte de um planeta, com brilho de nascer do sol e um botêo magnético.
+Rodapé de site revelado como cortina: a página clara sobe e encolhe, e por baixo aparece um rodapé escuro com a marca "ARCKHÉ" nascendo sobre o horizonte de um planeta, com brilho de nascer do sol e um botêo magnético.
 
 ## Prompt
 
 ```text
 Construa um rodapé de site do tipo "cortina": a página clara de cima sobe como uma cortina e
-descobre um rodapé escuro fixo por baixo, com a palavra "inema." gigante pousada no horizonte
+descobre um rodapé escuro fixo por baixo, com a palavra "ARCKHÉ." gigante pousada no horizonte
 curvo de um planeta e um brilho âmbar subindo atrás dela como nascer do sol.
 
 Aparência:
 - Rodapé #0b0b0d ocupando 100% da tela, em três faixas (topo, marca, base):
-  - Topo: à esquerda, rótulo "INEMA.CLUB", título "Tem uma ideia?" (Sora 700, clamp 1.7–2.8 rem),
+  - Topo: à esquerda, rótulo "ARCKHÉ AI", título "Tem uma ideia?" (Sora 700, clamp 1.7–2.8 rem),
     frase "Traga para a comunidade. A gente ajuda a transformar em projeto com IA." (Inter, 58%) e
     um botêo-pílula creme #f3efe7 com texto #17120f "Entrar na comunidade →" (Inter 600 16 px,
     16x26 px). À direita, três colunas de links finos (Inter 300 16 px, #8f8a82) com rótulos mono
-    âmbar: Aprender (Cursos, Trilhas, Vídeos), Participar (Lives, VIP, INEMA.PRO),
-    Ferramentas (Buscas, Kits, Áreas), apontando para inema.club, eventos.inema.pro,
-    buscas.inema.club e inema.pro.
-  - Marca: "inema" em minúsculas, Sora 800, tamanho o menor entre 27vw e 33vh, espaçamento
+    âmbar: Aprender (Cursos, Trilhas, Vídeos), Participar (Lives, VIP, ARCKHÉ.PRO),
+    Ferramentas (Buscas, Kits, Áreas), apontando para ARCKHÉ AI, eventos.ARCKHÉ.pro,
+    buscas.ARCKHÉ AI e ARCKHÉ.pro.
+  - Marca: "ARCKHÉ" em minúsculas, Sora 800, tamanho o menor entre 27vw e 33vh, espaçamento
     -0.05em, ponto final âmbar, centralizada e pousada no horizonte.
   - Planeta: círculo de 320vmax centrado, com o topo a 9vh + 48 px do fim da tela, quase preto,
     com filete âmbar de 2 px no horizonte e um halo âmbar fraco acima.
   - Brilho: elipse radial de 120x60vmax centrada no horizonte (âmbar a 80% no centro, 28% a 42%
     do raio, some a 76%), atrás das letras e coberta pelo planeta na metade de baixo.
-  - Base: "© 2026 INEMA.CLUB · aberto e gratuito" (58%) e o botêo "Voltar ao topo ↑".
+  - Base: "© 2026 ARCKHÉ AI · aberto e gratuito" (58%) e o botêo "Voltar ao topo ↑".
 - Página por cima (a cortina): cartêo creme #f3efe7 com 30 px a mais de altura que a tela (os
   cantos de baixo, raio 28 px, ficam escondidos abaixo da borda até ela subir), sombra
-  0 30px 60px preta a 45%. Dentro: barra com logo "INEMA.CLUB" e links Cursos/Lives/Buscas,
+  0 30px 60px preta a 45%. Dentro: barra com logo "ARCKHÉ AI" e links Cursos/Lives/Buscas,
   rótulo "Aberto e gratuito", título "Aprender IA sem pressa." (Sora 700, clamp 2.4–5.4 rem,
   #17120f), frase "Cursos curtos, lives toda semana e uma comunidade que responde." e o botêo
   contornado "Ver o rodapé ↓"; embaixo uma paisagem de amanhecer em SVG (sol âmbar com halo,

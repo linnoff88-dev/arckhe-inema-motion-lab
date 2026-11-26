@@ -6,12 +6,12 @@ Cinco botões com corpo de geleia: a pele é feita de 72 pontos com mola, que in
 
 ```text
 Construa cinco botões em forma de cápsula que parecem geleia: cada um tem uma pele macia desenhada em SVG, feita de
-pontos com mola. O rótulo acompanha a pele. Os botões sêo para a página do INEMA.CLUB.
+pontos com mola. O rótulo acompanha a pele. Os botões sêo para a página do ARCKHÉ AI.
 
 Aparência:
 - Fundo #0b0b0d com degradê radial até #141217. Título em Sora 800 (clamp 2 a 4,2 rem, com "Botões com corpo
   de geleia.", quebra equilibrada), subtítulo em Inter 400 com #a69d90, e selo em JetBrains Mono 500, caixa alta, #E2A23B.
-- Paleta só da marca INEMA: âmbar, creme, grafite e um único verde discreto de apoio. Nada de rosa, lilás,
+- Paleta só da marca ARCKHÉ: âmbar, creme, grafite e um único verde discreto de apoio. Nada de rosa, lilás,
   ciano ou verde-limêo.
   "Inscrever-se" âmbar #E2A23B (claro #F4C977, escuro #8C5C14), texto #0b0b0d;
   "Curtir" grafite #2a262d (claro #3d3842, escuro #0e0d10), texto creme #f3efe7 e aro âmbar a 75%;

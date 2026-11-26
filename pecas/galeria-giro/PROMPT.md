@@ -1,6 +1,6 @@
 # Galeria giro
 
-Um anel 3D com 12 projetos INEMA que gira com o arraste, reflete no chêo e abre o cartêo da frente em destaque.
+Um anel 3D com 12 projetos ARCKHÉ que gira com o arraste, reflete no chêo e abre o cartêo da frente em destaque.
 
 ## Prompt
 
@@ -22,10 +22,10 @@ Aparência:
   motivo em SVG (círculos concêntricos, pontos, ondas, listras, órbita ou barras), a inicial
   do projeto gigante em Sora 800, o número e a categoria em mono, o nome em Sora 600.
 - Projetos (nome, frase): Ata, Filmarca, Cardshorts, Motion Lab, Arena da Capivara,
-  Atende Clínica, INEMA Mods, Mentor, Carisma, Docflow, Publica, Agent Runtime.
+  Atende Clínica, ARCKHÉ Mods, Mentor, Carisma, Docflow, Publica, Agent Runtime.
 - Cada cartêo tem o reflexo logo abaixo (a mesma arte em scaleY(-1), opacidade 32%, máscara
   em degradê que some em 55%).
-- Topo: "INEMA · galeria de projetos" à esquerda e a dica "arraste · setas · role de lado" à
+- Topo: "ARCKHÉ · galeria de projetos" à esquerda e a dica "arraste · setas · role de lado" à
   direita. Base esquerda: "Projetos 2026" grande (2026 em âmbar). Base direita: título e frase
   do cartêo da frente e o contador "03 / 12" (número em âmbar).
 

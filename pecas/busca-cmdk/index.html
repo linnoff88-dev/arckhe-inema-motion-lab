@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Busca ⌘K</title>
-<meta name="description" content="Pílula de busca do INEMA.CLUB que cresce e vira uma paleta de comandos.">
+<meta name="description" content="Pílula de busca do ARCKHÉ AI que cresce e vira uma paleta de comandos.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Sora:wght@700&display=swap" rel="stylesheet">
@@ -139,7 +139,7 @@ mark{color:var(--amber);background:rgba(226,162,59,.14);font-weight:600;border-r
 <body>
 <div class="stage" id="stage">
   <header class="top">
-    <a class="logo" href="#inicio" aria-label="INEMA.CLUB, início">INEMA<b>.CLUB</b></a>
+    <a class="logo" href="#inicio" aria-label="ARCKHÉ AI, início">ARCKHÉ<b>.CLUB</b></a>
     <div class="pillwrap">
       <button class="pill" id="pill" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="pal" aria-keyshortcuts="Meta+K Control+K">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="7" cy="7" r="4.6"/><path d="M10.4 10.4 14 14" stroke-linecap="round"/></svg>
@@ -159,7 +159,7 @@ mark{color:var(--amber);background:rgba(226,162,59,.14);font-weight:600;border-r
     <main class="content">
       <div class="crumb">docs / <span>começar</span></div>
       <h1>Comece por aqui</h1>
-      <p class="lead">Cursos, guias e eventos do INEMA.CLUB sêo abertos e gratuitos. Nêo sabe por onde ir? <em>Busque.</em> A barra no topo encontra qualquer coisa em segundos.</p>
+      <p class="lead">Cursos, guias e eventos do ARCKHÉ AI sêo abertos e gratuitos. Nêo sabe por onde ir? <em>Busque.</em> A barra no topo encontra qualquer coisa em segundos.</p>
       <div class="cards">
         <div class="card"><div class="k">Cursos</div><h3>Trilhas do zero ao agente</h3><p>Codex, Claude Code, mods e runtime de agentes.</p></div>
         <div class="card"><div class="k">Guias</div><h3>Projetos prontos para usar</h3><p>Ata, Arena da Capivara, filmarca e mais.</p></div>
@@ -170,7 +170,7 @@ mark{color:var(--amber);background:rgba(226,162,59,.14);font-weight:600;border-r
 </div>
 
 <div class="bd" id="bd" aria-hidden="true"></div>
-<div class="pal" id="pal" role="dialog" aria-modal="true" aria-label="Buscar no INEMA.CLUB">
+<div class="pal" id="pal" role="dialog" aria-modal="true" aria-label="Buscar no ARCKHÉ AI">
   <div class="shell" id="shell"></div>
   <div class="pc" id="pc">
     <div class="head">
@@ -186,7 +186,7 @@ mark{color:var(--amber);background:rgba(226,162,59,.14);font-weight:600;border-r
     </div>
     <div class="foot">
       <span>↑↓ navegar · ↵ abrir<span class="h3"> · esc fechar</span></span>
-      <a id="footLink" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+      <a id="footLink" href="https://ARCKHÉ AI" target="_blank" rel="noopener">ARCKHÉ AI</a>
     </div>
   </div>
 </div>
@@ -224,23 +224,23 @@ mark{color:var(--amber);background:rgba(226,162,59,.14);font-weight:600;border-r
   };
   const GROUPS = [
     { id: 'curso', name: 'Cursos', items: [
-      { t: 'Curso Codex 18', d: '18 aulas do zero ao agente no terminal', m: '18 aulas', u: 'inema.club/cursos/codex-18' },
-      { t: 'Curso Claude Code', d: 'Do primeiro prompt ao fluxo com subagentes', m: 'v6', u: 'inema.club/cursos/claude-code' },
-      { t: 'Mods do Claude Code', d: 'Curso técnico: painéis, hooks e status line', m: 'técnico', u: 'inema.club/cursos/ccmods' },
-      { t: 'INEMA Agent Runtime', d: 'Kit, guia e curso para rodar agentes', m: 'PT·EN·ES', u: 'inema.club/cursos/agent-runtime' }
+      { t: 'Curso Codex 18', d: '18 aulas do zero ao agente no terminal', m: '18 aulas', u: 'ARCKHÉ AI/cursos/codex-18' },
+      { t: 'Curso Claude Code', d: 'Do primeiro prompt ao fluxo com subagentes', m: 'v6', u: 'ARCKHÉ AI/cursos/claude-code' },
+      { t: 'Mods do Claude Code', d: 'Curso técnico: painéis, hooks e status line', m: 'técnico', u: 'ARCKHÉ AI/cursos/ccmods' },
+      { t: 'ARCKHÉ Agent Runtime', d: 'Kit, guia e curso para rodar agentes', m: 'PT·EN·ES', u: 'ARCKHÉ AI/cursos/agent-runtime' }
     ]},
     { id: 'guia', name: 'Guias', items: [
-      { t: 'Ata — notetaker local', d: 'Grava, transcreve e resume sem sair da máquina', m: 'local', u: 'inema.club/guias/ata' },
-      { t: 'Arena da Capivara', d: 'Benchmark de SVG com 19 modelos', m: '19 modelos', u: 'inema.club/guias/arena-capivara' },
-      { t: 'inema-mods', d: '18 mods em português para o Claude Code', m: '18 mods', u: 'inema.club/guias/inema-mods' },
-      { t: 'Kits de atendimento', d: 'Restaurante e hotel prontos para usar', m: '2 kits', u: 'inema.club/guias/kits-atendimento' },
-      { t: 'filmarca', d: 'Seu site vira o filme da marca', m: 'vídeo', u: 'inema.club/guias/filmarca' },
-      { t: 'CrunchLog', d: 'Notetaker do Skool rodando no Linux', m: 'guia', u: 'inema.club/guias/crunchlog' }
+      { t: 'Ata — notetaker local', d: 'Grava, transcreve e resume sem sair da máquina', m: 'local', u: 'ARCKHÉ AI/guias/ata' },
+      { t: 'Arena da Capivara', d: 'Benchmark de SVG com 19 modelos', m: '19 modelos', u: 'ARCKHÉ AI/guias/arena-capivara' },
+      { t: 'ARCKHÉ-mods', d: '18 mods em português para o Claude Code', m: '18 mods', u: 'ARCKHÉ AI/guias/ARCKHÉ-mods' },
+      { t: 'Kits de atendimento', d: 'Restaurante e hotel prontos para usar', m: '2 kits', u: 'ARCKHÉ AI/guias/kits-atendimento' },
+      { t: 'filmarca', d: 'Seu site vira o filme da marca', m: 'vídeo', u: 'ARCKHÉ AI/guias/filmarca' },
+      { t: 'CrunchLog', d: 'Notetaker do Skool rodando no Linux', m: 'guia', u: 'ARCKHÉ AI/guias/crunchlog' }
     ]},
     { id: 'evento', name: 'Eventos', items: [
-      { t: 'Área Skills', d: 'Criar, validar e publicar skills', m: 'PT·EN·ES', u: 'eventos.inema.pro/skills' },
-      { t: 'Área MODS', d: 'Tudo sobre mods do Claude Code', m: 'nova', u: 'eventos.inema.pro/mods' },
-      { t: 'Live: Codex × Claude', d: 'Comparaçêo ao vivo, com perguntas', m: 'qui 20h', u: 'inema.club/eventos/codex-claude' }
+      { t: 'Área Skills', d: 'Criar, validar e publicar skills', m: 'PT·EN·ES', u: 'eventos.ARCKHÉ.pro/skills' },
+      { t: 'Área MODS', d: 'Tudo sobre mods do Claude Code', m: 'nova', u: 'eventos.ARCKHÉ.pro/mods' },
+      { t: 'Live: Codex × Claude', d: 'Comparaçêo ao vivo, com perguntas', m: 'qui 20h', u: 'ARCKHÉ AI/eventos/codex-claude' }
     ]}
   ];
   const normc = (c) => c.normalize('NFD').charAt(0).toLowerCase();

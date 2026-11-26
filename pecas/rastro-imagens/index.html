@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rastro de imagens · INEMA Motion Lab</title>
+<title>Rastro de imagens · ARCKHÉ Motion Lab</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
@@ -94,7 +94,7 @@ html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font-family:
 <body>
 <main class="palco" id="palco">
   <header class="topo">
-    <span class="marca">INEMA<b>.CLUB</b></span>
+    <span class="marca">ARCKHÉ<b>.CLUB</b></span>
     <nav aria-label="Principal">
       <a href="#cursos">Cursos</a>
       <a href="#projetos">Projetos (15)</a>
@@ -109,7 +109,7 @@ html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font-family:
         <span class="r">movem</span>
         <span>pessoas.</span>
       </h1>
-      <p class="sub" id="sub"><b>15 projetos e cursos gratuitos</b> no INEMA.CLUB. Passe o mouse no acervo para espalhar, clique para abrir.</p>
+      <p class="sub" id="sub"><b>15 projetos e cursos gratuitos</b> no ARCKHÉ AI. Passe o mouse no acervo para espalhar, clique para abrir.</p>
     </div>
 
     <section class="zona" id="zona" aria-label="Acervo de projetos" data-xray="acervo · área fixa que recorta o rastro; nada sai dela" data-xray-tool="code">
@@ -190,7 +190,7 @@ html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font-family:
 
   if (toque) {
     document.getElementById('dica').textContent = 'Toque para soltar';
-    document.getElementById('sub').innerHTML = '<b>15 projetos e cursos gratuitos</b> no INEMA.CLUB. Toque no acervo para soltar um cartêo e toque nele para abrir.';
+    document.getElementById('sub').innerHTML = '<b>15 projetos e cursos gratuitos</b> no ARCKHÉ AI. Toque no acervo para soltar um cartêo e toque nele para abrir.';
   }
 
   /* Z = retângulo do acervo; tudo do rastro é calculado em coordenadas locais dele */
@@ -266,7 +266,7 @@ html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font-family:
     grande.style.transform = 'translate3d(' + (luz.src.x - luz.tgt.x).toFixed(1) + 'px,' + (luz.src.y - luz.tgt.y).toFixed(1) + 'px,0) scale(' + (luz.src.w / tw).toFixed(4) + ',' + (luz.src.h / th).toFixed(4) + ')';
     picG.innerHTML = arte(c.i);
     legT.textContent = TITULOS[c.i];
-    legS.textContent = 'Curso gratuito · INEMA.CLUB';
+    legS.textContent = 'Curso gratuito · ARCKHÉ AI';
     legenda.classList.remove('mostra');
     luz.aberto = true; luz.alvo = 1;
     if (parado) { luz.p = 1; luz.vp = 0; }

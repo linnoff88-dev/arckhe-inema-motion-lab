@@ -5,7 +5,7 @@ Uma barra de atalhos em vidro, estilo dock de sistema, em que os ícones crescem
 ## Prompt
 
 ```text
-Construa uma barra de atalhos em vidro líquido, fixa na base da tela, para o site INEMA.CLUB: a pessoa passa o
+Construa uma barra de atalhos em vidro líquido, fixa na base da tela, para o site ARCKHÉ AI: a pessoa passa o
 ponteiro e os ícones crescem conforme a distância, um rótulo aparece sobre o ícone, e o clique faz o ícone pular.
 
 Aparência:

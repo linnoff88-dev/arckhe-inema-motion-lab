@@ -15,7 +15,7 @@ Aparência:
   (#5c6ca0 a 28%) à direita, e uma trama de pontos #f3efe7 a 5% (4 px) por cima.
 - Fontes Google: Sora 700 (logo e título), Inter 400/500/600 (corpo), JetBrains Mono 500 (rótulos,
   11–12 px, caixa alta, espaçamento 0.14em, âmbar).
-- Topo em três colunas: logo "INEMA.CLUB" (".CLUB" em âmbar) à esquerda; no centro uma pílula de
+- Topo em três colunas: logo "ARCKHÉ AI" (".CLUB" em âmbar) à esquerda; no centro uma pílula de
   vidro (fundo #18181c a 55%, desfoque 18 px, borda 1 px #f3efe7 a 10%) com os quatro itens
   (Inter 500 14.5 px, setinha ▾ que gira 180° quando aberto); à direita "Entrar" (texto 60%) e o
   botêo âmbar "Comece grátis" (texto #0b0b0d). Abaixo de 860 px a pílula desce para uma segunda
@@ -29,11 +29,11 @@ Aparência:
   Conteúdos (cada um com rótulo mono no topo, ícones de traço âmbar em caixinhas de 34 px):
   - Cursos (560 px, 2x2): Trilhas para começar · Aulas de 15 minutos · Em três idiomas · Novos da semana.
   - Eventos (330 px, lista): Lives da semana · Áreas temáticas · Gravações.
-  - Comunidade (500 px): dois links (Comunidade VIP, INEMA.PRO) + um cartêo âmbar
+  - Comunidade (500 px): dois links (Comunidade VIP, ARCKHÉ.PRO) + um cartêo âmbar
     "Tire dúvidas com quem já fez." com "ENTRAR →".
   - Ferramentas (620 px, 3 blocos): Buscas · Kits prontos · Vídeos.
-  Cada link tem título Inter 600 e uma linha curta a 60%. Links reais para inema.club,
-  eventos.inema.pro, buscas.inema.club e inema.pro.
+  Cada link tem título Inter 600 e uma linha curta a 60%. Links reais para ARCKHÉ AI,
+  eventos.ARCKHÉ.pro, buscas.ARCKHÉ AI e ARCKHÉ.pro.
 
 Movimento:
 1. Entrada: as manchas de luz derivam devagar (senos de 6.5 a 9 s, até 6% da tela). Menu fechado.

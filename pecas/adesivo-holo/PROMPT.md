@@ -1,6 +1,6 @@
 # Adesivo holográfico
 
-Figurinha holográfica da capivara do INEMA, com borda branca recortada, que inclina na direçêo do cursor, brilha em arco-íris e glitter conforme o ângulo e pode ter o canto descolado com o mouse.
+Figurinha holográfica da capivara do ARCKHÉ, com borda branca recortada, que inclina na direçêo do cursor, brilha em arco-íris e glitter conforme o ângulo e pode ter o canto descolado com o mouse.
 
 ## Prompt
 
@@ -11,15 +11,15 @@ pode ser puxado para descolar, mostrando o verso do papel.
 
 Aparência:
 - Palco #0b0b0d com um holofote suave no centro (#f3efe7 a 9%, radial) e uma trama fina de
-  pontos (#f3efe7 a 6%, 3 px). Rótulo no topo "INEMA.CLUB · EDIÇêO HOLOGRÁFICA" (JetBrains Mono
+  pontos (#f3efe7 a 6%, 3 px). Rótulo no topo "ARCKHÉ AI · EDIÇêO HOLOGRÁFICA" (JetBrains Mono
   500, 12 px, caixa alta, espaçamento 0.14em, âmbar #E2A23B). Abaixo da figurinha, uma pílula
-  mono "INEMA.CLUB · HOLO 1/250" (borda #f3efe7 a 14%) e a dica "Mexa o mouse para inclinar. Puxe
+  mono "ARCKHÉ AI · HOLO 1/250" (borda #f3efe7 a 14%) e a dica "Mexa o mouse para inclinar. Puxe
   o canto de baixo para descolar." (Inter, 55%).
 - Arte desenhada em canvas, em código (quadro de projeto 340x380, contorno #1a120c de 6 px,
   cantos e pontas redondos): cabeça de capivara de frente (retângulo arredondado #9b6b43 com
   reflexo claro), orelhinhas redondas #7a5232, focinho largo #7a5232 com duas narinas e um
   sorriso, olhos pretos com brilho branco, bochechas âmbar a 45%, capelo de formatura escuro com
-  borla âmbar, e embaixo uma faixa âmbar com pontas dobradas escrito "INEMA" em Sora 800.
+  borla âmbar, e embaixo uma faixa âmbar com pontas dobradas escrito "ARCKHÉ" em Sora 800.
 - Recorte: a silhueta da arte é dilatada carimbando-a em anéis (raios de 3 em 3 até 15, 32
   ângulos por anel) em branco #fbf8f2, e por baixo a mesma dilataçêo em cinza #b9b2a6 deslocada
   2 px para baixo, que vira a espessura do papel. A arte fica a 86% para caber a borda.

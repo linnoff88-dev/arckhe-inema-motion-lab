@@ -19,9 +19,9 @@ Aparência:
 - Tipografia (Google Fonts): títulos Sora 600; corpo Inter 400; rótulos JetBrains Mono 500,
   12 px, caixa alta, espaçamento 0.14em.
 - Layout, ocupa 100% da viewport, sem rolagem:
-  - Largura >= 760 px: duas colunas. Esquerda (40%): rótulo "INEMA.CLUB" no topo; no meio um
+  - Largura >= 760 px: duas colunas. Esquerda (40%): rótulo "ARCKHÉ AI" no topo; no meio um
     rótulo de hora ("06:40 · MANHê" / "22:15 · NOITE"), o título ("Bom dia." / "Boa noite.",
-    clamp 2.6–5.4 rem) e a linha "Estude no seu ritmo. O INEMA.CLUB está aberto 24 h." (Inter,
+    clamp 2.6–5.4 rem) e a linha "Estude no seu ritmo. O ARCKHÉ AI está aberto 24 h." (Inter,
     clamp 1–1.3 rem, texto secundário); abaixo, o interruptor com o rótulo visível "Modo noturno".
     Direita (60%): a cena num cartêo de cantos 28 px, borda 1 px na cor do texto a 10%.
   - Largura < 760 px (celular, 360 px): uma coluna; texto em cima, cena ocupando o resto da altura.

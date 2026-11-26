@@ -5,14 +5,14 @@ Um hero editorial em que o ponteiro deixa um rastro de cartões de projeto dentr
 ## Prompt
 
 ```text
-Construa um hero editorial para o INEMA.CLUB com duas áreas que nunca se misturam: a manchete e o acervo.
+Construa um hero editorial para o ARCKHÉ AI com duas áreas que nunca se misturam: a manchete e o acervo.
 Ao mover o ponteiro DENTRO do acervo, cartões de projeto sêo deixados no caminho, voam até o ponteiro e somem
 depois de um segundo. Nada do rastro sai do acervo: a manchete fica sempre limpa. Os cartões sêo desenhados em
 código, sem imagem externa.
 
 Aparência:
 - Fundo #0b0b0d com degradê radial até #111114. Palco em grade de três linhas: topo, miolo e rodapé.
-- Topo: marca "INEMA.CLUB" em Sora 800 16 px, ".CLUB" em #E2A23B. Menu em Inter 500 14 px, cor #a69d90:
+- Topo: marca "ARCKHÉ AI" em Sora 800 16 px, ".CLUB" em #E2A23B. Menu em Inter 500 14 px, cor #a69d90:
   "Cursos", "Projetos (15)", "Comunidade". O topo quebra linha (flex-wrap): no celular o menu desce para a
   segunda linha, ocupa a largura toda e distribui os três itens, sem estourar 360 px.
 - Miolo no desktop: duas colunas. À esquerda, título em Sora 800, clamp(2,4rem, 6,2vw, 5,9rem), entrelinha
@@ -32,7 +32,7 @@ Aparência:
 - Pílula "Abrir" (só com mouse): fundo #f3efe7, texto #151310 em Inter 600, segue o ponteiro sobre um cartêo
   e fica presa dentro do acervo.
 - Ampliaçêo: abre DENTRO do acervo, nêo na tela inteira. Véu #0b0b0d a 82% só sobre o acervo; cartêo ampliado
-  de até 520 px centrado no acervo (raio 8 px), legenda em Sora 700 e linha "Curso gratuito · INEMA.CLUB" em
+  de até 520 px centrado no acervo (raio 8 px), legenda em Sora 700 e linha "Curso gratuito · ARCKHÉ AI" em
   JetBrains Mono âmbar, botêo "Fechar" em pílula no canto.
 
 Movimento:

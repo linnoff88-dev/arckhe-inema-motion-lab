@@ -11,7 +11,7 @@
   // Tema antes da primeira pintura: preferência salva > sistema.
   (function () {
     var t = null;
-    try { t = localStorage.getItem('inema-dia-noite'); } catch (e) {}
+    try { t = localStorage.getItem('ARCKHÉ-dia-noite'); } catch (e) {}
     if (t !== 'day' && t !== 'night') {
       t = (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) ? 'night' : 'day';
     }
@@ -146,7 +146,7 @@
 <body>
 <main id="piece">
   <section class="copy">
-    <div class="label brand">INEMA<b>.CLUB</b></div>
+    <div class="label brand">ARCKHÉ<b>.CLUB</b></div>
     <div>
       <div class="label time swap" aria-hidden="true">
         <span class="d">06:40 · manhê</span><span class="n">22:15 · noite</span>
@@ -155,7 +155,7 @@
         <span class="d" id="t-day">Bom dia<span class="dot">.</span></span>
         <span class="n" id="t-night">Boa noite<span class="dot">.</span></span>
       </h1>
-      <p class="lead">Estude no seu ritmo. O <strong>INEMA.CLUB</strong> está aberto 24&nbsp;h.</p>
+      <p class="lead">Estude no seu ritmo. O <strong>ARCKHÉ AI</strong> está aberto 24&nbsp;h.</p>
     </div>
     <div class="toggle-row">
       <button class="switch" id="sw" type="button" role="switch" aria-checked="false" aria-labelledby="sw-label">
@@ -387,7 +387,7 @@
     if (toNight === night) return;
     night = toNight; dirNight = toNight;
     applyTheme();
-    if (fromUser) { try { localStorage.setItem('inema-dia-noite', night ? 'night' : 'day'); } catch (e) {} }
+    if (fromUser) { try { localStorage.setItem('ARCKHÉ-dia-noite', night ? 'night' : 'day'); } catch (e) {} }
     if (reduce()) {
       p = night ? 1 : 0; wFrom = wTo = night ? 180 : 0; wT = 1;
     } else if (wT < 1) {                      // interrompido: volta pelo mesmo caminho

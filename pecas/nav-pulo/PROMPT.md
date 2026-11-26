@@ -15,7 +15,7 @@ Aparência:
   texto secundário #f3efe7 a 62%, acento #E2A23B.
 - Fontes Google: títulos Sora 700; corpo Inter 400/600; rótulos JetBrains Mono 500, 12 px, caixa alta,
   espaçamento 0.14em.
-- Layout centralizado, ocupando 100% da tela sem rolagem: rótulo "INEMA.CLUB · NAVEGAÇêO" em âmbar;
+- Layout centralizado, ocupando 100% da tela sem rolagem: rótulo "ARCKHÉ AI · NAVEGAÇêO" em âmbar;
   86 px de espaço para a capivara; a barra; o título (clamp 2.1–4.6 rem, espaçamento -0.035em, ponto
   final âmbar); uma frase de apoio (Inter, 62%); e a dica mono "Clique numa aba ou use as setas ← →" a 40%.
 - Barra estilo adesivo: fundo #111114, contorno 2.5 px #f3efe7, raio total, sombra dura 5px 5px 0 #E2A23B
@@ -32,7 +32,7 @@ Aparência:
 - Conteúdo de cada aba (título · frase):
   Cursos gratuitos · Trilhas curtas para aprender IA do zero, no seu ritmo.
   Lives toda semana · Ao vivo, com perguntas, gravaçêo e material de apoio.
-  Ache em segundos · Busque aulas, guias e kits em todo o INEMA.
+  Ache em segundos · Busque aulas, guias e kits em todo o ARCKHÉ.
   Comunidade VIP · Grupo fechado no Telegram para quem quer ir mais fundo.
 
 Movimento:

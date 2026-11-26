@@ -1,11 +1,11 @@
 # Rodapé mapa
 
-Um rodapé com três cartões das comunidades INEMA por idioma, com a hora local real, e um mapa ilustrado onde uma capivara caminha pelas ruas até o ponto escolhido.
+Um rodapé com três cartões das comunidades ARCKHÉ por idioma, com a hora local real, e um mapa ilustrado onde uma capivara caminha pelas ruas até o ponto escolhido.
 
 ## Prompt
 
 ```text
-Construa um rodapé com dois lados: à esquerda, três cartões das comunidades INEMA por idioma,
+Construa um rodapé com dois lados: à esquerda, três cartões das comunidades ARCKHÉ por idioma,
 cada um com a hora local ao vivo; à direita, um mapa de cidade ilustrado e vivo. Ao escolher um
 cartêo, o pino daquele ponto cai no mapa e uma capivara caminha pelo caminho mais curto das ruas
 até lá, com a câmera acompanhando.
@@ -16,8 +16,8 @@ Aparência:
   nomes no mapa JetBrains Mono 500, caixa alta nos rótulos.
 - Layout em duas colunas (38% / 62%); no celular (até 800 px) uma coluna, mapa embaixo com
   no mínimo 280 px.
-- Esquerda: rótulo "Comunidade · três idiomas", a marca "INEMA." gigante (ponto em âmbar),
-  uma linha de apoio, três cartões e o rodapé (inema.club, Lives · Buscas · VIP, ©).
+- Esquerda: rótulo "Comunidade · três idiomas", a marca "ARCKHÉ." gigante (ponto em âmbar),
+  uma linha de apoio, três cartões e o rodapé (ARCKHÉ AI, Lives · Buscas · VIP, ©).
   Cartões (botões): cidade, "Cursos em português/espanhol/inglês", hora local HH:MM, deslocamento
   UTC e um selo "dia" (âmbar) ou "noite" (azul #9fb4ff). Cidades: Sêo Paulo
   (America/Sao_Paulo), Cidade do México (America/Mexico_City), Nova York (America/New_York).

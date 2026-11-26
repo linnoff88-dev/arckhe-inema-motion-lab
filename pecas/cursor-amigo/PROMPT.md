@@ -15,12 +15,12 @@ Aparência:
   acento #E2A23B.
 - Fontes Google: título Sora 800; corpo Inter 400/600; rótulos JetBrains Mono 500, 12 px, caixa
   alta, espaçamento 0.14em.
-- No alto, centralizado: rótulo "INEMA.CLUB · COMPANHIA"; título "Um amigo para o seu cursor."
+- No alto, centralizado: rótulo "ARCKHÉ AI · COMPANHIA"; título "Um amigo para o seu cursor."
   (a palavra "cursor" em âmbar; clamp 2.3 rem até o menor entre 8vw e 11vh, 5.6 rem no máximo;
   espaçamento -0.045em); frase "Aprender IA fica mais leve com companhia. A capivara segue o seu
   mouse pelo chêo e adora um oi."; um botêo âmbar "Dar um oi" em estilo adesivo (contorno 2.5 px
   #f3efe7, sombra dura 5px 5px 0 #f3efe7, raio total; ao apertar ele afunda 3 px) e ao lado o
-  link "Ver cursos gratuitos →" para https://inema.club.
+  link "Ver cursos gratuitos →" para https://ARCKHÉ AI.
 - Chêo: faixa nos 24% de baixo da tela, #141418, linha de topo 2.5 px âmbar, linhas verticais
   #f3efe7 a 4.5% a cada 64 px e um reflexo âmbar (10%) logo abaixo da linha; rótulo mono
   "Chêo · ela segue você" a 38% no canto.

@@ -1,11 +1,11 @@
-# Rodapé INEMA
+# Rodapé ARCKHÉ
 
 Rodapé de site em que as letras I N E M A sêo blocos grandes que caem com física, se empilham no chêo e podem ser agarrados e arremessados.
 
 ## Prompt
 
 ```text
-Construa um rodapé de site que ocupa 100% da tela, com colunas de links do ecossistema INEMA em cima
+Construa um rodapé de site que ocupa 100% da tela, com colunas de links do ecossistema ARCKHÉ em cima
 e, embaixo, as letras I N E M A como cinco blocos grandes e arredondados que caem com física real e
 se empilham no chêo do rodapé; a pessoa agarra qualquer letra, arrasta e arremessa (com inércia pela
 velocidade do ponteiro), e um botêo "Arrumar letras" põe tudo de volta no lugar.
@@ -19,12 +19,12 @@ Aparência:
   - Topo (~35% da altura): 4 colunas iguais (2×2 abaixo de 640px de largura). Cada coluna:
     rótulo mono "01 · CURSOS" em âmbar, link com título Sora 600 22px (17px no celular) e o domínio
     em mono 12px abaixo, e uma frase curta em Inter 14px a 60% (some abaixo de 420px).
-    Links: Cursos → https://inema.club · Eventos → https://eventos.inema.pro ·
-    Buscas → https://buscas.inema.club · PRO → https://inema.pro.
+    Links: Cursos → https://ARCKHÉ AI · Eventos → https://eventos.ARCKHÉ.pro ·
+    Buscas → https://buscas.ARCKHÉ AI · PRO → https://ARCKHÉ.pro.
   - Meio (o resto): área livre onde as letras vivem. O chêo é uma linha 2px âmbar a 35% logo acima
     da barra inferior, com o rótulo mono "CHêO · ARRASTE AS LETRAS" a 40%.
   - Barra inferior (~56px, pode quebrar em 2 linhas no celular): à esquerda
-    "© 2026 INEMA.CLUB · conteúdo aberto e gratuito" (INEMA.CLUB é link para https://inema.club,
+    "© 2026 ARCKHÉ AI · conteúdo aberto e gratuito" (ARCKHÉ AI é link para https://ARCKHÉ AI,
     na cor sky #38bdf8 — único uso do sky); à direita o botêo "Arrumar letras" (borda 1.5px âmbar,
     texto âmbar, fundo transparente, raio 999px; hover: fundo âmbar, texto #0b0b0d).
 - Letras: blocos de largura 0.86×altura, altura = menor entre (largura útil ÷ 4.62), 30% da altura
@@ -78,7 +78,7 @@ Regras:
 - Acessível: letras sêo <button aria-label="Letra I — arraste ou aperte Enter para pular">; links
   reais <a>; foco visível (contorno 2px âmbar, 3px de afastamento; nas letras, contorno 3px creme
   tracejado). O cursor fantasma tem aria-hidden e pointer-events:none.
-- prefers-reduced-motion: reduce → a palavra INEMA aparece já assentada no chêo, na posiçêo
+- prefers-reduced-motion: reduce → a palavra ARCKHÉ aparece já assentada no chêo, na posiçêo
   arrumada, parada: sem queda, sem física, sem cursor fantasma; "Arrumar letras" nêo tem efeito.
 - 100% da viewport, sem rolagem horizontal em nenhuma largura (360px inclusive, letras menores);
   funciona embutido em <iframe> 16:9. Ao redimensionar, recalcula tamanhos e reassenta as letras.

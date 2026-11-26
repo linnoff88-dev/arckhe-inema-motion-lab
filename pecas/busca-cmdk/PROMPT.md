@@ -1,23 +1,23 @@
 # Busca ⌘K
 
-Uma pílula de busca no topo do portal INEMA.CLUB que cresce e vira uma paleta de comandos: digitar filtra cursos, guias e eventos, as setas movem um realce que desliza e Enter abre o item.
+Uma pílula de busca no topo do portal ARCKHÉ AI que cresce e vira uma paleta de comandos: digitar filtra cursos, guias e eventos, as setas movem um realce que desliza e Enter abre o item.
 
 ## Prompt
 
 ```text
-Construa a barra de busca "⌘K" do INEMA.CLUB: no topo de uma página de documentaçêo há uma pílula
+Construa a barra de busca "⌘K" do ARCKHÉ AI: no topo de uma página de documentaçêo há uma pílula
 "Buscar cursos, guias e eventos…"; ao clicar nela (ou apertar ⌘K / Ctrl+K com a peça em foco ou sob o
 mouse) a pílula cresce e vira uma paleta de comandos centralizada, onde a pessoa digita, navega com as
 setas e abre um resultado com Enter.
 
 Aparência:
 - Fundo da página #0b0b0d; superfícies #111114; paleta #141418. Texto #f3efe7; texto secundário #9a958c;
-  bordas rgba(243,239,231,.10). Acento âmbar #E2A23B. Sky #38bdf8 só no link "INEMA.CLUB" (rodapé da
+  bordas rgba(243,239,231,.10). Acento âmbar #E2A23B. Sky #38bdf8 só no link "ARCKHÉ AI" (rodapé da
   paleta e link do toast).
 - Fontes Google: Sora 700 (logo e título da página), Inter 400/500/600 (corpo, itens, campo),
   JetBrains Mono 500 (teclas, rótulos de grupo, metadados, migalha).
 - Barra superior: 56 px de altura, fundo #0b0b0d com borda inferior rgba(243,239,231,.08). À esquerda
-  o logo "INEMA" #f3efe7 + ".CLUB" #E2A23B (Sora 700, 17 px). No centro a pílula. À direita links
+  o logo "ARCKHÉ" #f3efe7 + ".CLUB" #E2A23B (Sora 700, 17 px). No centro a pílula. À direita links
   "Cursos · Guias · Eventos" (Inter 14, #9a958c), ocultos abaixo de 760 px.
 - Pílula: <button>, altura 40 px, largura min(440 px, espaço livre), raio 999 px, fundo #111114, borda
   1 px rgba(243,239,231,.10); lupa 16 px #9a958c; texto Inter 14 #9a958c; à direita um chip de tecla
@@ -42,15 +42,15 @@ Aparência:
   - Realce: UM retângulo rgba(226,162,59,.10), raio 10 px, com barra âmbar de 2 px à esquerda, que
     desliza por baixo dos itens até o selecionado.
   - Letras que casaram com a busca: <mark> âmbar #E2A23B, peso 600, fundo rgba(226,162,59,.14), raio 3 px.
-  - Rodapé 38 px: "↑↓ navegar · ↵ abrir · esc fechar" (mono 11 #9a958c) e o link "INEMA.CLUB" em sky.
+  - Rodapé 38 px: "↑↓ navegar · ↵ abrir · esc fechar" (mono 11 #9a958c) e o link "ARCKHÉ AI" em sky.
   - Sem resultado: "Nada encontrado para “x”" centrado, no mesmo espaço da lista.
   - Foco no campo: a borda inferior do cabeçalho fica âmbar a 60 %.
   - Abaixo de 420 px o metadado dos itens some e o rodapé mostra só "↑↓ navegar · ↵ abrir".
 - Fundo atrás da paleta: rgba(5,5,7,.62) com desfoque 6 px.
 - Toast: base da tela, centralizado, #141418, borda âmbar 35 %, raio 12 px, "Abrindo <título>" +
-  endereço inema.club/… em sky (mono 12).
-- Itens: Cursos — Curso Codex 18, Curso Claude Code, Mods do Claude Code (técnico), INEMA Agent Runtime.
-  Guias — Ata (notetaker local), Arena da Capivara, inema-mods, Kits de atendimento, filmarca, CrunchLog.
+  endereço ARCKHÉ AI/… em sky (mono 12).
+- Itens: Cursos — Curso Codex 18, Curso Claude Code, Mods do Claude Code (técnico), ARCKHÉ Agent Runtime.
+  Guias — Ata (notetaker local), Arena da Capivara, ARCKHÉ-mods, Kits de atendimento, filmarca, CrunchLog.
   Eventos — Área Skills, Área MODS, Live: Codex × Claude.
 
 Movimento:

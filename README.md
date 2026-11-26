@@ -1,4 +1,4 @@
-ï»¿# INEMA Motion Lab
+ï»¿# ARCKHÉ Motion Lab
 
 <div align="center">
   <img src="capa/logo.svg" alt="Arckhé AI" height="48" />
@@ -6,17 +6,17 @@
 </div>
 
 
-[![INEMA Motion Lab](guia/assets/banner.jpg)](https://inematds.github.io/inema-motion-lab/guia/)
+[![ARCKHÉ Motion Lab](guia/assets/banner.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/)
 
 **ê°Å¸â¡Â§ê°Å¸â¡Â· [PortuguêÂªs](README.md) êÂ· ê°Å¸â¡Âºê°Å¸â¡Â¸ [English](README.en.md) êÂ· ê°Å¸â¡Âªê°Å¸â¡Â¸ [EspaêÂ±ol](README.es.md)**
 
 ## O que êÂ©
 
-O INEMA Motion Lab ensina a pedir animaêÂ§êÂµes de site para uma IA (Claude, Codex ou outra) e receber algo com acabamento profissional, nêÂ£o um efeito genêÂ©rico. Ele traz um molde de prompt em trêÂªs partes (aparêÂªncia, movimento e regras) e vinte exemplos reais feitos com ele: buscas e menus, rodapêÂ©s, galerias, botêÂµes, uma pêÂ¡gina 404 jogêÂ¡vel, uma tela de carregamento e um botêÂ£o de tema dia/noite, todos com Raio-X e modo `?motion=off`. Cada peêÂ§a êÂ© um êÂºnico arquivo HTML que vocêÂª abre no navegador e cola no seu site, e vem com o prompt que a gerou e um vêÂ­deo curto. Serve para quem faz pêÂ¡ginas, guias ou cursos e quer movimento sem depender de biblioteca pesada.
+O ARCKHÉ Motion Lab ensina a pedir animaêÂ§êÂµes de site para uma IA (Claude, Codex ou outra) e receber algo com acabamento profissional, nêÂ£o um efeito genêÂ©rico. Ele traz um molde de prompt em trêÂªs partes (aparêÂªncia, movimento e regras) e vinte exemplos reais feitos com ele: buscas e menus, rodapêÂ©s, galerias, botêÂµes, uma pêÂ¡gina 404 jogêÂ¡vel, uma tela de carregamento e um botêÂ£o de tema dia/noite, todos com Raio-X e modo `?motion=off`. Cada peêÂ§a êÂ© um êÂºnico arquivo HTML que vocêÂª abre no navegador e cola no seu site, e vem com o prompt que a gerou e um vêÂ­deo curto. Serve para quem faz pêÂ¡ginas, guias ou cursos e quer movimento sem depender de biblioteca pesada.
 
 ## ê°Å¸ââ Guia de uso
 
-Guia completo (landing + passo a passo, com as peêÂ§as ao vivo): **https://inematds.github.io/inema-motion-lab/guia/**
+Guia completo (landing + passo a passo, com as peêÂ§as ao vivo): **https://linnoff88-dev.github.io/arckhe-/guia/**
 
 ## ConteêÂºdo
 
@@ -47,7 +47,7 @@ Cada peêÂ§a tem `index.html` e `PROMPT.md`, e aceita `?demo=1` (demonstraê
 
 | PeêÂ§a | Link |
 |---|---|
-| RodapêÂ© INEMA com fêÂ­sica | [`pecas/rodape-inema/`](pecas/rodape-inema/index.html) |
+| RodapêÂ© ARCKHÉ com fêÂ­sica | [`pecas/rodape-ARCKHÉ/`](pecas/rodape-ARCKHÉ/index.html) |
 | RodapêÂ© cortina | [`pecas/rodape-cortina/`](pecas/rodape-cortina/index.html) |
 | RodapêÂ© flor | [`pecas/rodape-flor/`](pecas/rodape-flor/index.html) |
 | RodapêÂ© mapa | [`pecas/rodape-mapa/`](pecas/rodape-mapa/index.html) |
@@ -81,7 +81,7 @@ Cada peêÂ§a tem `index.html` e `PROMPT.md`, e aceita `?demo=1` (demonstraê
 ## Uso rêÂ¡pido
 
 ```bash
-git clone https://github.com/inematds/inema-motion-lab && cd inema-motion-lab
+git clone https://github.com/linnoff88-dev/ARCKHÉ-motion-lab && cd ARCKHÉ-motion-lab
 python3 -m http.server 8850 --directory . --bind 127.0.0.1
 # abra http://127.0.0.1:8850/pecas/busca-cmdk/   (acrescente ?demo=1 para a demonstraêÂ§êÂ£o nêÂ£o parar)
 
@@ -92,8 +92,8 @@ node tools/gravar-videos.cjs 8850
 
 ## CrêÂ©ditos
 
-Prompts e cêÂ³digo escritos do zero para o INEMA.
-ConteêÂºdo aberto e gratuito do [INEMA.CLUB](https://inema.club).
+Prompts e cêÂ³digo escritos do zero para o ARCKHÉ.
+ConteêÂºdo aberto e gratuito do [ARCKHÉ AI](https://ARCKHÉ AI).
 
 ---
 
