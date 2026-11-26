@@ -95,7 +95,7 @@ html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font-family:
   var parado = !!(mqReduz && mqReduz.matches) || /[?&]motion=off\b/.test(params);
   if (parado) document.documentElement.classList.add('parado');
 
-  var DRUM = ' ABCDEFGHIJKLMNOPQRSTUVWXYZÁÂÃÇÉÊÍÓÔÕÚ0123456789:./-→';
+  var DRUM = ' ABCDEFGHIJKLMNOPQRSTUVWXYZÁÂêÇÉÊÍÓÔÕÚ0123456789:./-→';
   var NDRUM = DRUM.length, FLIP = 0.066, MAXF = 15, ATRASO_TILE = 0.034;
   var STATUS = ['EM BREVE', 'SALA ABERTA', 'ENTRANDO', 'ÚLTIMAS VAGAS', 'ENCERRADA'];
   var STATUS_CURTO = ['EM BREVE', 'ABERTA', 'ENTRANDO', 'ÚLTIMAS', 'ENCERRADA'];
@@ -275,7 +275,7 @@ html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font-family:
       a.addEventListener('focus', function () { definirMenu(i, 'VAI →'); a.classList.add('vai'); });
       a.addEventListener('blur', function () { definirMenu(i, menuTexto(i)); a.classList.remove('vai'); });
     });
-    /* estado inicial, sem animação */
+    /* estado inicial, sem animaçêo */
     iniciarTextos();
     tiles.forEach(function (t) { if (!t.anim) finalizar(t, t.atual); });
     atualizarLampadas();
@@ -338,7 +338,7 @@ html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font-family:
     });
   }
 
-  /* ---------- simulação: relógio, status e avisos ---------- */
+  /* ---------- simulaçêo: relógio, status e avisos ---------- */
   function avancarAviso() {
     avisoIdx = (avisoIdx + 1) % AVISOS.length;
     aplicarLinha(faixaTiles, pad(AVISOS[avisoIdx], 26), 0);

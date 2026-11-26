@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Galeria giro</title>
-<meta name="description" content="Anel 3D de projetos INEMA que gira com o arraste, com reflexo no chão e cartão que abre em destaque.">
+<meta name="description" content="Anel 3D de projetos INEMA que gira com o arraste, com reflexo no chêo e cartêo que abre em destaque.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&family=Sora:wght@200;600;800&display=swap" rel="stylesheet">
@@ -30,7 +30,7 @@
   .palco.arrastando { cursor: grabbing; }
   .palco:focus-visible { outline: 3px solid var(--ambar); outline-offset: -3px; }
 
-  /* luz, poeira, chão, vinheta e grão */
+  /* luz, poeira, chêo, vinheta e grêo */
   .luz {
     position: absolute; left: 50%; top: -10%; width: 90vmin; height: 95%; margin-left: -45vmin;
     background: linear-gradient(180deg, rgba(243, 239, 231, .16), rgba(226, 162, 59, .05) 60%, transparent 92%);
@@ -98,7 +98,7 @@
   .rolo { display: inline-block; height: 1em; overflow: hidden; color: var(--ambar); }
   .rolo span { display: block; will-change: transform; }
 
-  /* destaque (cartão aberto) */
+  /* destaque (cartêo aberto) */
   .borrado { position: absolute; inset: -10%; z-index: 3; pointer-events: none; opacity: 0; filter: blur(48px) saturate(1.2); will-change: opacity; }
   .detalhe { position: absolute; inset: 0; z-index: 8; pointer-events: none; }
   .detalhe.aberto { pointer-events: auto; }
@@ -146,7 +146,7 @@
   <div class="chao" aria-hidden="true"></div>
   <div class="borrado" id="borrado" aria-hidden="true" data-xray="cópia borrada · aparece em opacidade atrás do destaque" data-xray-tool="code"></div>
 
-  <div class="cena" id="cena" data-xray="cena · encolhe quando um cartão abre" data-xray-tool="code">
+  <div class="cena" id="cena" data-xray="cena · encolhe quando um cartêo abre" data-xray-tool="code">
     <div class="anel" id="anel" data-xray="anel 3D · um ângulo só, guiado por mola" data-xray-tool="code"></div>
   </div>
 
@@ -164,7 +164,7 @@
   <div class="grao" aria-hidden="true"></div>
 
   <div class="detalhe" id="detalhe" role="dialog" aria-modal="false" aria-labelledby="detTitulo" hidden>
-    <div class="quadro" id="quadro" data-xray="cartão aberto · FLIP com mola até 70 % do palco" data-xray-tool="code">
+    <div class="quadro" id="quadro" data-xray="cartêo aberto · FLIP com mola até 70 % do palco" data-xray-tool="code">
       <div class="arte" id="detArte"></div>
       <div class="info">
         <div><h2 id="detTitulo">Ata</h2><span class="ano" id="detAno">2026 · projeto</span></div>
@@ -224,12 +224,12 @@ window.MOTION = (() => {
   'use strict';
   /* ===== parâmetros (espelham o PROMPT.md) ===== */
   const N = 12, PASSO = 360 / N;
-  const INCLINA = 9.5;                 // graus de inclinação do anel
+  const INCLINA = 9.5;                 // graus de inclinaçêo do anel
   const MOLA_ANEL = { k: 38, d: 11.5 };
   const MOLA_FLIP = { k: 150, d: 21 };
   const ESCURECE = 0.8;                // até 80 % mais escuro de costas
-  const ERGUE = 0.07;                  // cartão da frente sobe 7 %
-  const ARREMESSO = 0.32;              // s de projeção da velocidade no arremesso
+  const ERGUE = 0.07;                  // cartêo da frente sobe 7 %
+  const ARREMESSO = 0.32;              // s de projeçêo da velocidade no arremesso
   const AUTO_PASSO = 2400;             // ms entre avanços automáticos
 
   const PROJETOS = [
@@ -268,7 +268,7 @@ window.MOTION = (() => {
   const btnFechar = document.getElementById('fechar');
   const fantasma = document.getElementById('fantasma');
 
-  /* ===== arte de cada cartão (gradiente + motivo em SVG) ===== */
+  /* ===== arte de cada cartêo (gradiente + motivo em SVG) ===== */
   const motivo = (tipo) => {
     const c = 'rgba(11,11,13,.28)';
     switch (tipo) {
@@ -289,7 +289,7 @@ window.MOTION = (() => {
   const itens = PROJETOS.map((p, i) => {
     const item = document.createElement('div');
     item.className = 'item';
-    item.setAttribute('data-xray', 'cartão · rotateY(i·30°) translateZ(raio), escurece com o ângulo');
+    item.setAttribute('data-xray', 'cartêo · rotateY(i·30°) translateZ(raio), escurece com o ângulo');
     item.setAttribute('data-xray-tool', 'code');
     item.innerHTML =
       `<button type="button" class="cartao" aria-label="${p[0]}, projeto ${i + 1} de ${N}">${arteHTML(p, i)}` +
@@ -335,7 +335,7 @@ window.MOTION = (() => {
   const cl = (v, a = 0, b = 1) => Math.max(a, Math.min(b, v));
 
   function irPara(i) {
-    // menor caminho até o cartão i
+    // menor caminho até o cartêo i
     const atual = -ang / PASSO;
     let d = ((i - atual) % N + N) % N; if (d > N / 2) d -= N;
     alvo = -(atual + d) * PASSO;
@@ -499,7 +499,7 @@ window.MOTION = (() => {
     rodaFim = performance.now() + 140;
   }, { passive: true });
 
-  /* ===== modo demonstração ===== */
+  /* ===== modo demonstraçêo ===== */
   let demoAtivo = !parado || demo;
   let demoT = 0;
   const G = { x: 0, y: 0, vis: 0 };
@@ -531,7 +531,7 @@ window.MOTION = (() => {
       else if (u < 760) { fantasma.classList.add('aperta'); if (!arr) { pegar(G.x, performance.now()); arr.fantasma = true; } }
       else if (u < 1040) { const e = (u - 760) / 280; G.x = cx + 90 - 260 * e * e; mover(G.x, performance.now()); }
       else if (u < 1100) { if (arr && arr.fantasma) largar(performance.now()); fantasma.classList.remove('aperta'); }
-    } else if (t >= 8600 && t < 10400) {        // vai até o cartão da frente e clica
+    } else if (t >= 8600 && t < 10400) {        // vai até o cartêo da frente e clica
       const u = t - 8600;
       const e = easeIO(cl(u / 600));
       G.x += (cx - G.x) * Math.min(1, e); G.y += (cy - G.y) * Math.min(1, e);

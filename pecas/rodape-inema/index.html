@@ -69,7 +69,7 @@
   /* ---------- meio: área das letras ---------- */
   .meio { flex: 1 1 auto; min-height: 140px; }
 
-  /* ---------- barra inferior (o chão fica no topo dela) ---------- */
+  /* ---------- barra inferior (o chêo fica no topo dela) ---------- */
   .barra {
     position: relative; flex: none;
     display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px;
@@ -167,7 +167,7 @@
   <div class="meio" id="meio"></div>
 
   <div class="barra" id="barra">
-    <span class="chao" aria-hidden="true">CHÃO · ARRASTE AS LETRAS</span>
+    <span class="chao" aria-hidden="true">CHêO · ARRASTE AS LETRAS</span>
     <p>© 2026 <a class="sky" href="https://inema.club">INEMA.CLUB</a> · conteúdo aberto e gratuito</p>
     <button type="button" class="arrumar" id="arrumar">Arrumar letras</button>
   </div>
@@ -255,7 +255,7 @@
 
   let corpos = [];             // corpos das letras
   let noMundo = [];            // já soltos?
-  let simT = 0;                // relógio da simulação (ms), pausa junto com o loop
+  let simT = 0;                // relógio da simulaçêo (ms), pausa junto com o loop
   let dropInicio = 0;
   const pegas = new Map();     // id -> {i, ox, oy, tx, ty, amostras}
   let volta = [];              // entradas de "arrumar"
@@ -272,7 +272,7 @@
     const meioY = (floorY + ceuY) / 2;
     const opt = { isStatic: true, friction: 0.6, restitution: 0.2 };
     Composite.add(engine.world, [
-      Bodies.rectangle(W / 2, floorY + WALL / 2, W + 2 * WALL, WALL, opt),            // chão
+      Bodies.rectangle(W / 2, floorY + WALL / 2, W + 2 * WALL, WALL, opt),            // chêo
       teto = Bodies.rectangle(W / 2, assentado ? -WALL / 2 : ceuY - WALL / 2, W + 2 * WALL, WALL, opt), // teto invisível
       Bodies.rectangle(-WALL / 2, meioY, WALL, altura, opt),                          // parede esq.
       Bodies.rectangle(W + WALL / 2, meioY, WALL, altura, opt)                        // parede dir.
@@ -377,7 +377,7 @@
     });
   }
 
-  /* ===== proteção: nada escapa ===== */
+  /* ===== proteçêo: nada escapa ===== */
   function guarda() {
     corpos.forEach((b, i) => {
       if (!noMundo[i]) return;
@@ -393,7 +393,7 @@
     });
   }
 
-  /* ===== modo demonstração (cursor fantasma) ===== */
+  /* ===== modo demonstraçêo (cursor fantasma) ===== */
   let demoLigado = true;
   const G = { x: 0, y: 0, esc: 1 };
   const easeInOut = p => p < .5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
@@ -481,7 +481,7 @@
     el.addEventListener('pointerup', fim);
     el.addEventListener('pointercancel', fim);
     el.addEventListener('lostpointercapture', fim);
-    // Enter/Espaço geram click com detail 0 (teclado); clique de mouse não pula
+    // Enter/Espaço geram click com detail 0 (teclado); clique de mouse nêo pula
     el.addEventListener('click', e => { if (e.detail === 0) pulinho(i); });
   });
   btnArrumar.addEventListener('click', arrumar);

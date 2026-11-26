@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Sora:wght@600;700&display=swap" rel="stylesheet">
 <script>
-  // ?demo=1 demonstração contínua · ?motion=off parado no estado final · ?motion=xray raio-X
+  // ?demo=1 demonstraçêo contínua · ?motion=off parado no estado final · ?motion=xray raio-X
   (function () {
     var q = location.search, m = (q.match(/[?&]motion=([a-z]+)/) || [])[1] || '';
     window.MOTION = { demo: /[?&]demo=1\b/.test(q), off: m === 'off', xray: m === 'xray' };
@@ -165,7 +165,7 @@
   </header>
 
   <div class="panel" id="panel" role="region" aria-label="Submenu">
-    <div class="shadow" id="shadow" data-xray="painel único · posição, largura e altura em mola (260/28), recortado por 4 cantos" data-xray-tool="code"></div>
+    <div class="shadow" id="shadow" data-xray="painel único · posiçêo, largura e altura em mola (260/28), recortado por 4 cantos" data-xray-tool="code"></div>
     <div class="clip first" id="c1"><div class="clip" id="c2"><div class="clip" id="c3"><div class="clip" id="c4">
       <div class="glass"></div>
       <div class="edge" id="edge"></div>
@@ -183,7 +183,7 @@
           <div class="kicker">Ao vivo</div>
           <div class="list">
             <a class="link" href="https://eventos.inema.pro"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3"/></svg></span><span><b>Lives da semana</b><small>Agenda e link para entrar.</small></span></a>
-            <a class="link" href="https://eventos.inema.pro"><span class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg></span><span><b>Áreas temáticas</b><small>Agentes, vídeo, gestão e mais.</small></span></a>
+            <a class="link" href="https://eventos.inema.pro"><span class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg></span><span><b>Áreas temáticas</b><small>Agentes, vídeo, gestêo e mais.</small></span></a>
             <a class="link" href="https://eventos.inema.pro"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M10 9l5 3-5 3z"/></svg></span><span><b>Gravações</b><small>Perdeu ao vivo? Assista depois.</small></span></a>
           </div>
         </div>
@@ -397,7 +397,7 @@
     if (window.xrayTick) xrayTick();
   }
 
-  // ---------- modo demonstração ----------
+  // ---------- modo demonstraçêo ----------
   var demoOn = !reduce() || DEMO, demoE = 0, demoFade = 1, demoStopping = false;
   var SEG = 2000, LOOP = SEG * items.length + 1400;
   function stopDemo(e) {

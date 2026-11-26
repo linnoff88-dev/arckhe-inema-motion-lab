@@ -38,7 +38,7 @@ body.compacto .atalhos{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margi
 .atalhos a{display:inline-flex;gap:8px;align-items:center;padding:9px 13px;border:1px solid rgba(243,239,231,.18);border-radius:999px;color:var(--fg);text-decoration:none;font:500 12px/1 'JetBrains Mono',monospace;letter-spacing:.06em;text-transform:uppercase}
 .atalhos b{color:var(--acc);font-weight:500}
 .atalhos a:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
-/* capa no compacto: composição própria, texto maior e capivara grande ocupando a base */
+/* capa no compacto: composiçêo própria, texto maior e capivara grande ocupando a base */
 body.compacto .capa{left:20px;right:20px;top:112px}
 body.compacto h1{font-size:clamp(2rem,10vw,3.4rem);line-height:1.04}
 body.compacto h1 span{white-space:nowrap}
@@ -79,7 +79,7 @@ h1 span:nth-child(2){color:var(--acc)}
 .redes a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
 .relogio{font-variant-numeric:tabular-nums}
 
-/* cartão de foto que segue o ponteiro */
+/* cartêo de foto que segue o ponteiro */
 .cartao{position:fixed;left:0;top:0;z-index:25;width:min(300px,60vw);aspect-ratio:4/3;border-radius:14px;overflow:hidden;background:var(--ink);opacity:0;pointer-events:none;transition:opacity .25s ease;will-change:transform}
 .cartao.on{opacity:1}
 .foto{position:absolute;inset:0;opacity:0;transition:opacity .2s}
@@ -132,7 +132,7 @@ body.compacto .dedo{display:block}
 <main class="palco" id="palco">
   <header class="topo">
     <a class="marca" href="#" data-xray="marca · texto fixo, sem movimento" data-xray-tool="code">INEMA<b>.CLUB</b></a>
-    <button class="gatilho" id="gatilho" type="button" aria-expanded="false" aria-controls="menu" data-xray="botão Menu · as duas barras viram X por mola e o rótulo rola para Fechar" data-xray-tool="code">
+    <button class="gatilho" id="gatilho" type="button" aria-expanded="false" aria-controls="menu" data-xray="botêo Menu · as duas barras viram X por mola e o rótulo rola para Fechar" data-xray-tool="code">
       <span class="barras" aria-hidden="true"><i></i><i></i></span>
       <span class="rolo" aria-hidden="true"><span>Menu</span><span>Fechar</span></span>
       <span class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Abrir menu</span>
@@ -164,7 +164,7 @@ body.compacto .dedo{display:block}
     <rect x="178" y="136" width="10" height="36" rx="5" fill="#7a5232"/>
   </svg>
 
-  <div class="veu" id="veu" aria-hidden="true" data-xray="veu · círculo laranja que cresce do botão com escala, sem clip-path" data-xray-tool="code"></div>
+  <div class="veu" id="veu" aria-hidden="true" data-xray="veu · círculo laranja que cresce do botêo com escala, sem clip-path" data-xray-tool="code"></div>
 
   <nav class="menu" id="menu" aria-label="Menu principal" data-xray="menu · tela cheia que surge com itens subindo de máscara" data-xray-tool="code">
     <ul class="lista" id="lista"></ul>
@@ -182,7 +182,7 @@ body.compacto .dedo{display:block}
     </footer>
   </nav>
 
-  <div class="cartao" id="cartao" aria-hidden="true" data-xray="cartão · segue o ponteiro com atraso e inclina pela velocidade" data-xray-tool="code">
+  <div class="cartao" id="cartao" aria-hidden="true" data-xray="cartêo · segue o ponteiro com atraso e inclina pela velocidade" data-xray-tool="code">
     <div class="foto" data-f="0"><svg viewBox="0 0 300 225" preserveAspectRatio="xMidYMid slice"><rect width="300" height="225" fill="#1c1611"/><rect x="48" y="46" width="200" height="130" rx="14" fill="#2b2118"/><rect x="66" y="62" width="200" height="130" rx="14" fill="#3d2e1d"/><rect x="84" y="78" width="200" height="130" rx="14" fill="#E2A23B"/><rect x="104" y="100" width="90" height="8" rx="4" fill="#17120f"/><rect x="104" y="118" width="130" height="8" rx="4" fill="#17120f" opacity=".6"/><rect x="104" y="136" width="70" height="8" rx="4" fill="#17120f" opacity=".4"/></svg></div>
     <div class="foto" data-f="1"><svg viewBox="0 0 300 225" preserveAspectRatio="xMidYMid slice"><rect width="300" height="225" fill="#14130f"/><g>
       <rect x="40" y="48" width="36" height="30" rx="7" fill="#2b2118"/><rect x="84" y="48" width="36" height="30" rx="7" fill="#2b2118"/><rect x="128" y="48" width="36" height="30" rx="7" fill="#E2A23B"/><rect x="172" y="48" width="36" height="30" rx="7" fill="#2b2118"/><rect x="216" y="48" width="36" height="30" rx="7" fill="#2b2118"/>
@@ -232,7 +232,7 @@ body.compacto .dedo{display:block}
   var vitrine = document.getElementById('vitrine'), legenda = document.getElementById('legenda');
 
   /* modo compacto: toque ou tela estreita. A prévia sai do ponteiro e vai para um lugar fixo
-     abaixo da lista, então nunca cobre o item tocado nem sai da tela. */
+     abaixo da lista, entêo nunca cobre o item tocado nem sai da tela. */
   var mqCompacto = window.matchMedia ? window.matchMedia('(hover: none), (max-width: 700px)') : null;
   var compacto = false;
   function aplicarModo() {
@@ -344,7 +344,7 @@ body.compacto .dedo{display:block}
   window.addEventListener('pointermove', function (e) { P.x = e.clientX; P.y = e.clientY; P.on = true; }, {passive: true});
   window.addEventListener('resize', medirCartao);
 
-  /* cursor fantasma: roda até a primeira interação real (exceto ?demo=1) */
+  /* cursor fantasma: roda até a primeira interaçêo real (exceto ?demo=1) */
   var ghostAtivo = !parado, gParado = false, gOp = 0, gIdx = 0, gT = 0, gDe = {x: P.x, y: P.y}, gPos = {x: P.x, y: P.y};
   function centro(el) { var r = el.getBoundingClientRect(); return {x: r.left + r.width / 2, y: r.top + r.height / 2}; }
   var ROTEIRO = [
@@ -437,7 +437,7 @@ body.compacto .dedo{display:block}
     var dt = last ? Math.min(1 / 30, (t - last) / 1000) : 1 / 60;
     last = t;
     ghostPasso(dt);
-    /* cartão: segue o ponteiro com atraso (lerp) e inclina pela velocidade */
+    /* cartêo: segue o ponteiro com atraso (lerp) e inclina pela velocidade */
     var f = parado ? 1 : 1 - Math.pow(1 - 0.13, dt * 60);
     var vx = (P.x - card.px) / Math.max(dt, 1 / 120);
     card.px = P.x;
@@ -447,7 +447,7 @@ body.compacto .dedo{display:block}
     card.x += (P.x - card.x) * f;
     card.y += (P.y - card.y) * f;
     if (!compacto) {
-      /* à direita do ponteiro; se não couber, vira para a esquerda; sempre dentro da tela */
+      /* à direita do ponteiro; se nêo couber, vira para a esquerda; sempre dentro da tela */
       var W = window.innerWidth, H = window.innerHeight;
       var cx = card.x + 28, cy = card.y - ch / 2;
       if (cx + cw > W - 8) cx = card.x - 28 - cw;
@@ -481,7 +481,7 @@ body.compacto .dedo{display:block}
   io.observe(palco);
   document.addEventListener('visibilitychange', function () { if (document.hidden) desligar(); else ligar(); });
   if (parado) {
-    /* estado final parado: sem roteiro fantasma, sem cartão animado */
+    /* estado final parado: sem roteiro fantasma, sem cartêo animado */
     P.on = false;
     ghostAtivo = false;
   }

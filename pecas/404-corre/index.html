@@ -84,7 +84,7 @@
 <body>
 <main class="stage" id="stage">
   <canvas id="game" tabindex="0" role="img"
-    aria-label="Jogo: uma capivara corre por um chão de código e pula obstáculos. Toque, clique ou pressione espaço para pular."></canvas>
+    aria-label="Jogo: uma capivara corre por um chêo de código e pula obstáculos. Toque, clique ou pressione espaço para pular."></canvas>
 
   <div class="hud in d3" aria-hidden="true">
     <div class="l">
@@ -314,7 +314,7 @@
       S.landT += dt;
     }
 
-    // colisão
+    // colisêo
     if (S.state === 'run') {
       const ax0 = capX + HB.l, ax1 = capX + HB.r, ay0 = S.y + HB.b, ay1 = S.y + HB.t;
       for (const o of S.obs) {
@@ -424,7 +424,7 @@
     hill(0.15, groundY - 18, 90, 0.0062, 0.017, '#141418', null);
     hill(0.35, groundY + 2, 52, 0.011, 0.029, '#19191f', 'rgba(226,162,59,0.10)');
 
-    // chão
+    // chêo
     ctx.fillStyle = '#101013'; ctx.fillRect(0, groundY, W, H - groundY);
     ctx.strokeStyle = 'rgba(226,162,59,0.40)'; ctx.lineWidth = 1.5;
     ctx.beginPath(); ctx.moveTo(0, groundY); ctx.lineTo(W, groundY); ctx.stroke();
@@ -488,7 +488,7 @@
 
     ctx.save();
     ctx.translate(capX, groundY - S.y);
-    // sombra no chão
+    // sombra no chêo
     ctx.save();
     ctx.translate(0, S.y);
     const sh = Math.max(0.35, 1 - S.y / 140);

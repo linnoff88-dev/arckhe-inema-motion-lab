@@ -24,10 +24,10 @@ Aparência:
 - Estados de status, em ordem: EM BREVE, SALA ABERTA, ENTRANDO, ÚLTIMAS VAGAS, ENCERRADA.
 
 Movimento:
-1. Carregamento: os tiles vão de vazio ao texto em flip, da esquerda para a direita, com 34 ms entre tiles.
+1. Carregamento: os tiles vêo de vazio ao texto em flip, da esquerda para a direita, com 34 ms entre tiles.
 2. Cada flip dura 66 ms. A metade de cima cai em rotateX de 0 a 90 graus, acelerando como gravidade (q²), e fica
    mais escura (opacidade até 0,6). Depois a metade de baixo sobe de -90 a 0 graus, com sombra que clareia.
-3. Uma troca passa pelo tambor fixo " A–Z ÁÂÃÇÉÊÍÓÔÕÚ 0–9 : . / - →". Nunca anda para trás. São no máximo 15 flips;
+3. Uma troca passa pelo tambor fixo " A–Z ÁÂêÇÉÊÍÓÔÕÚ 0–9 : . / - →". Nunca anda para trás. Sêo no máximo 15 flips;
    se faltarem mais passos, começa 15 passos antes do alvo. Só os tiles que mudam animam.
 4. Faixa de avisos: troca a cada 5,2 s. Clique ou Enter pulam para o próximo aviso.
 5. Relógio do cabeçalho: a cada 2,1 s avança um minuto. Também a cada 2,1 s um evento avança um status. Quando um
@@ -37,13 +37,13 @@ Movimento:
 
 Regras:
 - JavaScript puro e CSS, sem biblioteca. Um único requestAnimationFrame, pausado com IntersectionObserver e com a aba oculta.
-- Os flips são feitos com transform (rotateX) e opacidade. Os tiles são elementos HTML, sem canvas.
+- Os flips sêo feitos com transform (rotateX) e opacidade. Os tiles sêo elementos HTML, sem canvas.
 - Nunca capturar a rolagem: sem preventDefault.
 - Acessível: cada item do menu é um link real com foco visível (contorno de 3 px em #E2A23B). A faixa de avisos é
-  um botão com Enter e Espaço.
+  um botêo com Enter e Espaço.
 - prefers-reduced-motion ou ?motion=off: as letras trocam na hora, sem flip. O quadro continua atualizando o texto.
 - ?demo=1: nenhum comportamento muda (o quadro já se mexe sozinho).
 - ?motion=xray: contorno tracejado âmbar e etiqueta do data-xray sobre cada parte que se move.
 - Funciona em 1280×720 e em 360 px, sem rolagem horizontal: abaixo de 640 px o quadro passa para duas colunas.
-- Textos sem travessão, sem "incrível" e sem "revolucionário".
+- Textos sem travessêo, sem "incrível" e sem "revolucionário".
 ```

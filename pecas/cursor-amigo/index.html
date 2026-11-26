@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Sora:wght@700;800&display=swap" rel="stylesheet">
 <script>
-  // ?demo=1 demonstração contínua · ?motion=off parado no estado final · ?motion=xray raio-X
+  // ?demo=1 demonstraçêo contínua · ?motion=off parado no estado final · ?motion=xray raio-X
   (function () {
     var q = location.search, m = (q.match(/[?&]motion=([a-z]+)/) || [])[1] || '';
     window.MOTION = { demo: /[?&]demo=1\b/.test(q), off: m === 'off', xray: m === 'xray' };
@@ -94,7 +94,7 @@
   <section class="copy">
     <div class="label">INEMA<b>.CLUB</b> · companhia</div>
     <h1>Um amigo para o seu <em>cursor</em>.</h1>
-    <p class="lead">Aprender IA fica mais leve com companhia. A capivara segue o seu mouse pelo chão e adora um oi.</p>
+    <p class="lead">Aprender IA fica mais leve com companhia. A capivara segue o seu mouse pelo chêo e adora um oi.</p>
     <div class="row">
       <button class="cta" id="cta" type="button">Dar um oi</button>
       <a class="more" href="https://inema.club">Ver cursos gratuitos →</a>
@@ -102,10 +102,10 @@
   </section>
 
   <div class="shade" id="shade" aria-hidden="true" data-xray="sombra · encolhe e clareia com a altura do pulo" data-xray-tool="code"></div>
-  <div class="floor" aria-hidden="true"><span class="label">chão · ela segue você</span></div>
+  <div class="floor" aria-hidden="true"><span class="label">chêo · ela segue você</span></div>
 
   <button class="buddy" id="buddy" type="button" aria-label="Capivara: clique para ela dar uma pirueta. Setas movem a capivara."
-    data-xray="capivara · persegue o cursor com aceleração e freio, patas plantadas, senta parada" data-xray-tool="code">
+    data-xray="capivara · persegue o cursor com aceleraçêo e freio, patas plantadas, senta parada" data-xray-tool="code">
     <div class="lean" id="lean">
       <svg viewBox="0 0 128 108" aria-hidden="true">
         <g id="face">
@@ -224,7 +224,7 @@
   function step(dt) {
     var s = dt / 1000, R = reduce();
     if (R) {
-      // parada, apontando para o botão
+      // parada, apontando para o botêo
       var bx = btnCenterX();
       x = clamp(bx - W * 1.25, W / 2, vw - W / 2); v = 0; dir = bx > x ? 1 : -1;
       leanA = 0; sit = 0; jumpY = 0; sq = 0; spin = -1; dizzy = 0; pointA = 1; phase = 0;
@@ -241,7 +241,7 @@
     var dist = target - x, sg = dist > 0 ? 1 : -1;
     if (spin >= 0 || dizzy > 0 || airborne || crouch > 0) want = false;
 
-    // antecipação: alvo longe partindo do repouso
+    // antecipaçêo: alvo longe partindo do repouso
     if (want && wasRest && Math.abs(dist) > 260 && anticip <= 0) anticip = 150;
     if (anticip > 0) { anticip -= dt; want = false; }
 
@@ -269,7 +269,7 @@
     phase += Math.abs(v * s) / k / STRIDE * 2 * Math.PI;
     if (Math.abs(v) < 5) phase = lerp(phase, Math.round(phase / Math.PI) * Math.PI, 0.15);
 
-    // inclinação: para frente correndo, para trás freando / antecipando
+    // inclinaçêo: para frente correndo, para trás freando / antecipando
     var speedN = Math.abs(v) / VMAX;
     var leanT = speedN * (speedN > 0.6 ? 16 : 10);
     if (hardBrake || (Math.abs(v) > 120 && Math.sign(v) !== sg && want)) leanT = -9;
@@ -344,7 +344,7 @@
     legT(legBR, HIP.BR, lerp(a1[0], -78, sit), Math.max(a1[1], tuck, sit * 0.35));
     // dianteira de trás: anda, ou bate o pé sentada
     legT(legFL, HIP.FL, a1[0] + sit * 8 + tapA * 0.0, Math.max(a1[1], tuck, Math.max(0, -tapA) * 0.012 * sit));
-    // dianteira da frente: anda, ou aponta para o botão
+    // dianteira da frente: anda, ou aponta para o botêo
     var fr = lerp(a2[0], -118, pointA);
     legT(legFR, HIP.FR, fr + sit * 10, Math.max(a2[1] * (1 - pointA), tuck * (1 - pointA)));
     head.setAttribute('transform', 'rotate(' + (sit * 8 - pointA * 6 + (dizzy > 0 ? wob * 0.6 : 0)).toFixed(2) + ' 90 50)');
@@ -376,7 +376,7 @@
     if (window.xrayTick) xrayTick();
   }
 
-  // ---------- modo demonstração ----------
+  // ---------- modo demonstraçêo ----------
   var LOOP = 12000;
   var prevG = null;
   var demoOn = !reduce() || DEMO, demoE = 0, demoFade = 1, demoStopping = false, ringT = 1e9, lastC = -1, ringAt = [0, 0];
@@ -399,7 +399,7 @@
     if (c < 600) return P0;
     if (c < 1500) return mv(P0, P1, 600, 1500);         // corre para a direita
     if (c < 4300) return P1;                            // parado: ela freia e senta
-    if (c < 5200) return mv(P1, B, 4300, 5200);         // vai até o botão
+    if (c < 5200) return mv(P1, B, 4300, 5200);         // vai até o botêo
     if (c < 6900) return B;                             // aponta, clique em 6000
     if (c < 7700) return mv(B, P2, 6900, 7700);
     if (c < 8400) return mv(P2, M, 7700, 8400);         // vai até a capivara

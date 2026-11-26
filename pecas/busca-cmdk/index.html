@@ -152,14 +152,14 @@ mark{color:var(--amber);background:rgba(226,162,59,.14);font-weight:600;border-r
     </nav>
   </header>
   <div class="main">
-    <aside class="side" aria-label="Documentação">
+    <aside class="side" aria-label="Documentaçêo">
       <div class="grp"><h4>Começar</h4><a class="on" href="#comece">Comece por aqui</a><a href="#trilhas">Trilhas</a><a href="#vip">Comunidade VIP</a></div>
       <div class="grp"><h4>Ferramentas</h4><a href="#codex">Codex</a><a href="#claude">Claude Code</a><a href="#mods">Mods</a><a href="#skills">Skills</a></div>
     </aside>
     <main class="content">
       <div class="crumb">docs / <span>começar</span></div>
       <h1>Comece por aqui</h1>
-      <p class="lead">Cursos, guias e eventos do INEMA.CLUB são abertos e gratuitos. Não sabe por onde ir? <em>Busque.</em> A barra no topo encontra qualquer coisa em segundos.</p>
+      <p class="lead">Cursos, guias e eventos do INEMA.CLUB sêo abertos e gratuitos. Nêo sabe por onde ir? <em>Busque.</em> A barra no topo encontra qualquer coisa em segundos.</p>
       <div class="cards">
         <div class="card"><div class="k">Cursos</div><h3>Trilhas do zero ao agente</h3><p>Codex, Claude Code, mods e runtime de agentes.</p></div>
         <div class="card"><div class="k">Guias</div><h3>Projetos prontos para usar</h3><p>Ata, Arena da Capivara, filmarca e mais.</p></div>
@@ -240,13 +240,13 @@ mark{color:var(--amber);background:rgba(226,162,59,.14);font-weight:600;border-r
     { id: 'evento', name: 'Eventos', items: [
       { t: 'Área Skills', d: 'Criar, validar e publicar skills', m: 'PT·EN·ES', u: 'eventos.inema.pro/skills' },
       { t: 'Área MODS', d: 'Tudo sobre mods do Claude Code', m: 'nova', u: 'eventos.inema.pro/mods' },
-      { t: 'Live: Codex × Claude', d: 'Comparação ao vivo, com perguntas', m: 'qui 20h', u: 'inema.club/eventos/codex-claude' }
+      { t: 'Live: Codex × Claude', d: 'Comparaçêo ao vivo, com perguntas', m: 'qui 20h', u: 'inema.club/eventos/codex-claude' }
     ]}
   ];
   const normc = (c) => c.normalize('NFD').charAt(0).toLowerCase();
   GROUPS.forEach((g) => g.items.forEach((it, k) => { it.g = g.id; it.k = k; it.n = it.t.split('').map(normc).join(''); }));
 
-  // retorna {s: pontuação, p: posições casadas} ou null
+  // retorna {s: pontuaçêo, p: posições casadas} ou null
   function match(it, q) {
     if (!q) return { s: -it.k, p: [] };
     const idx = it.n.indexOf(q);
@@ -402,7 +402,7 @@ mark{color:var(--amber);background:rgba(226,162,59,.14);font-weight:600;border-r
   });
   window.addEventListener('resize', () => { measure(); const el = S.opts[S.sel]; if (el) { hl.t = el.offsetTop; hl.snap(); } });
 
-  /* ---------- modo demonstração ---------- */
+  /* ---------- modo demonstraçêo ---------- */
   const G = { on: !reduced, x: 0, y: 0, a: 0, mv: null, fd: null, press: 0, rip: -1, key: -1, t: 0, idx: 0 };
   const startPt = () => ({ x: innerWidth * .86, y: innerHeight * .84 });
   const pillPt = () => { const r = pill.getBoundingClientRect(); return { x: r.left + Math.min(r.width * .32, 120), y: r.top + r.height * .62 }; };

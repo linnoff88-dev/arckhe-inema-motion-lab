@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&family=Sora:wght@700;800&display=swap" rel="stylesheet">
 <script>
-  // ?demo=1 demonstração contínua · ?motion=off parado no estado final · ?motion=xray raio-X
+  // ?demo=1 demonstraçêo contínua · ?motion=off parado no estado final · ?motion=xray raio-X
   (function () {
     var q = location.search, m = (q.match(/[?&]motion=([a-z]+)/) || [])[1] || '';
     window.MOTION = { demo: /[?&]demo=1\b/.test(q), off: m === 'off', xray: m === 'xray' };
@@ -66,9 +66,9 @@
 </head>
 <body>
 <main id="piece">
-  <div class="top label">INEMA<b>.CLUB</b> · edição holográfica</div>
+  <div class="top label">INEMA<b>.CLUB</b> · ediçêo holográfica</div>
   <div class="stage" id="stage">
-    <div class="shadow" id="shadow" aria-hidden="true" data-xray="sombra · escorrega para o lado oposto da inclinação" data-xray-tool="code"></div>
+    <div class="shadow" id="shadow" aria-hidden="true" data-xray="sombra · escorrega para o lado oposto da inclinaçêo" data-xray-tool="code"></div>
     <div class="tilt" id="tilt" data-xray="figurinha · inclina para o cursor em mola 120/13, até 18°" data-xray-tool="code">
       <canvas id="cv" role="img" aria-label="Figurinha holográfica de uma capivara com capelo de formatura e a faixa INEMA"></canvas>
       <button class="corner" id="corner" type="button" aria-label="Descolar o canto da figurinha. Setas inclinam."
@@ -226,7 +226,7 @@
     var pg = g.createLinearGradient(-PW * 0.2 + off, 0, PW * 1.2 + off, PH);
     ['#ffd3e6', '#d4ecff', '#dcffe4', '#fff1c4', '#e6d6ff', '#ffd3e6', '#d4ecff'].forEach(function (c, i, a) { pg.addColorStop(i / (a.length - 1), c); });
     g.globalCompositeOperation = 'multiply'; g.globalAlpha = 0.75; g.fillStyle = pg; g.fillRect(0, 0, PW, PH);
-    // 2. faixa de arco-íris vivo em color-dodge (não pega a tinta preta)
+    // 2. faixa de arco-íris vivo em color-dodge (nêo pega a tinta preta)
     var c0 = 0.5 + tx * 0.45 - ty * 0.25;
     var bx0 = PW * (c0 - 0.42), bx1 = PW * (c0 + 0.42);
     var bg = g.createLinearGradient(bx0, 0, bx1, PH * 0.6);
@@ -238,7 +238,7 @@
     var sg = g.createLinearGradient(PW * (sc - 0.12), 0, PW * (sc + 0.12), PH * 0.35);
     sg.addColorStop(0, 'rgba(255,255,255,0)'); sg.addColorStop(0.5, 'rgba(255,255,255,.85)'); sg.addColorStop(1, 'rgba(255,255,255,0)');
     g.globalCompositeOperation = 'overlay'; g.globalAlpha = 0.7; g.fillStyle = sg; g.fillRect(0, 0, PW, PH);
-    // 4. glitter: cada camada acende quando a inclinação aponta para ela
+    // 4. glitter: cada camada acende quando a inclinaçêo aponta para ela
     g.globalCompositeOperation = 'lighter';
     var tl = Math.hypot(tx, ty), ux = tl ? tx / tl : 0, uy = tl ? ty / tl : 0;
     flakes.forEach(function (f) {
@@ -262,7 +262,7 @@
     g.globalCompositeOperation = 'source-over';
     g.drawImage(ink, 0, 0);   // a tinta preta nunca pega arco-íris
 
-    // ---------- composição com a dobra ----------
+    // ---------- composiçêo com a dobra ----------
     ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, PW, PH);
     var C = [CORNER[0] * k, CORNER[1] * k], P = [C[0] + peel.x * k, C[1] + peel.y * k];
     var dx = C[0] - P[0], dy = C[1] - P[1], dl = Math.hypot(dx, dy);
@@ -276,7 +276,7 @@
       g2.lineTo(M[0] + u[0] * BIG + sgn * n[0] * BIG, M[1] + u[1] * BIG + sgn * n[1] * BIG);
       g2.closePath();
     }
-    // frente: tudo o que não passou da dobra
+    // frente: tudo o que nêo passou da dobra
     ctx.save(); half(ctx, -1); ctx.clip(); ctx.drawImage(fx, 0, 0); ctx.restore();
     // aba: o pedaço além da dobra espelhado sobre a linha, mostrando o verso do papel
     var fg = flap.getContext('2d');
@@ -366,7 +366,7 @@
       }
       if (peel.x > 0) { peel.x = 0; peel.vx = 0; } if (peel.y > 0) { peel.y = 0; peel.vy = 0; }
     }
-    // pressão de 2% ao soltar (mola)
+    // pressêo de 2% ao soltar (mola)
     var ap = -300 * (press.x - 1) - 16 * press.v; press.v += ap * s; press.x += press.v * s;
     press.x = clamp(press.x, 0.97, 1.01);
   }
@@ -378,7 +378,7 @@
     if (window.xrayTick) xrayTick();
   }
 
-  // ---------- modo demonstração (ciclo de 9 s) ----------
+  // ---------- modo demonstraçêo (ciclo de 9 s) ----------
   var LOOP = 9000;
   var demoOn = !reduce() || DEMO, demoE = 0, demoFade = 1, demoStopping = false, demoDrag = false;
   function stopDemo(e) {
@@ -428,7 +428,7 @@
     ghost.style.transform = 'translate(' + (pos[0] - 4).toFixed(1) + 'px,' + (pos[1] - 3).toFixed(1) + 'px) scale(' + pr + ')';
   }
   if (!demoOn) ghost.style.display = 'none';
-  // durante o arrasto do fantasma a aba não volta: tratar como "segurando"
+  // durante o arrasto do fantasma a aba nêo volta: tratar como "segurando"
   var _step = step;
   step = function (dt) {
     if (demoDrag && demoOn && !demoStopping) { var keep = { x: peel.x, y: peel.y }; _step(dt); peel.x = keep.x; peel.y = keep.y; peel.vx = peel.vy = 0; }

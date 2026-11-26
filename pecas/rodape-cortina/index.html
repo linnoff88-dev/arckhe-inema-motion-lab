@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@500&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
 <script>
-  // ?demo=1 demonstração contínua · ?motion=off parado no estado final · ?motion=xray raio-X
+  // ?demo=1 demonstraçêo contínua · ?motion=off parado no estado final · ?motion=xray raio-X
   (function () {
     var q = location.search, m = (q.match(/[?&]motion=([a-z]+)/) || [])[1] || '';
     window.MOTION = { demo: /[?&]demo=1\b/.test(q), off: m === 'off', xray: m === 'xray' };
@@ -133,7 +133,7 @@
 <body>
 <main id="piece">
   <footer class="foot" id="foot">
-    <div class="glow" id="glow" aria-hidden="true" data-xray="brilho de nascer do sol · acende com a revelação e respira" data-xray-tool="code"></div>
+    <div class="glow" id="glow" aria-hidden="true" data-xray="brilho de nascer do sol · acende com a revelaçêo e respira" data-xray-tool="code"></div>
     <div class="planet" aria-hidden="true"></div>
 
     <div class="foot-top">
@@ -141,7 +141,7 @@
         <div class="label">INEMA.CLUB</div>
         <h2>Tem uma ideia?</h2>
         <p class="sub">Traga para a comunidade. A gente ajuda a transformar em projeto com IA.</p>
-        <a class="pill" id="pill" href="https://inema.club" data-xray="botão magnético · se inclina para o ponteiro em mola, mancha âmbar cresce do ponto de entrada" data-xray-tool="code">
+        <a class="pill" id="pill" href="https://inema.club" data-xray="botêo magnético · se inclina para o ponteiro em mola, mancha âmbar cresce do ponto de entrada" data-xray-tool="code">
           <span class="blot" id="blot" aria-hidden="true"></span>
           <span class="lab" id="pillLab">Entrar na comunidade <span class="arr" aria-hidden="true">→</span></span>
         </a>
@@ -157,7 +157,7 @@
     </div>
 
     <div class="word-area">
-      <p class="word" id="word" aria-label="inema" data-xray="marca · letras sobem 40% e trocam o borrão pelo nítido, mola 70/15, 60 ms entre elas" data-xray-tool="code"></p>
+      <p class="word" id="word" aria-label="inema" data-xray="marca · letras sobem 40% e trocam o borrêo pelo nítido, mola 70/15, 60 ms entre elas" data-xray-tool="code"></p>
     </div>
 
     <div class="foot-bottom">
@@ -283,7 +283,7 @@
   // foco por teclado abre/fecha a cortina
   foot.addEventListener('focusin', function () { if (r < 0.5 && !tween) go(1, 700, expoOut); });
 
-  // botão magnético
+  // botêo magnético
   piece.addEventListener('pointermove', function (e) { if (e.isTrusted) magnetAt(e.clientX, e.clientY); }, { passive: true });
   piece.addEventListener('pointerleave', function () { magT = [0, 0]; wake(); }, { passive: true });
   function magnetAt(px, py) {
@@ -355,7 +355,7 @@
       L.soft.style.opacity = (clamp(1 - uu, 0, 1) * 0.9).toFixed(3);
     }
 
-    // botão magnético (mola 190/15); o texto anda um pouco mais
+    // botêo magnético (mola 190/15); o texto anda um pouco mais
     if (R) { mag.x = mag.y = mag.vx = mag.vy = 0; }
     else {
       for (var m = 0; m < 2; m++) {
@@ -375,7 +375,7 @@
     return false;
   }
 
-  // ---------- modo demonstração (ciclo de 10 s) ----------
+  // ---------- modo demonstraçêo (ciclo de 10 s) ----------
   var LOOP = 10000, LIFT = 1200, DROP = 7200;
   var demoOn = !reduce() || DEMO, demoE = 0, demoFade = 1, demoStopping = false, lastC = -1, ringT = 1e9, ringAt = [0, 0];
   var demoInPill = false, demoLink = -1;
@@ -450,7 +450,7 @@
     rafId = 0;
     var dt = last ? Math.min(50, now - last) : 16;
     last = now; clock += dt;
-    // sem demonstração: a página espera 1.2 s e sobe sozinha uma vez
+    // sem demonstraçêo: a página espera 1.2 s e sobe sozinha uma vez
     if (!demoOn && !revealedOnce && !reduce()) { started += dt; if (started >= LIFT && !tween && !drag) { revealedOnce = true; if (r < 0.5) go(1, 1100, expoOut); } }
     renderDemo(dt);
     render(dt);

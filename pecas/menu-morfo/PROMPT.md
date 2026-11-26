@@ -18,7 +18,7 @@ Aparência:
 - Topo em três colunas: logo "INEMA.CLUB" (".CLUB" em âmbar) à esquerda; no centro uma pílula de
   vidro (fundo #18181c a 55%, desfoque 18 px, borda 1 px #f3efe7 a 10%) com os quatro itens
   (Inter 500 14.5 px, setinha ▾ que gira 180° quando aberto); à direita "Entrar" (texto 60%) e o
-  botão âmbar "Comece grátis" (texto #0b0b0d). Abaixo de 860 px a pílula desce para uma segunda
+  botêo âmbar "Comece grátis" (texto #0b0b0d). Abaixo de 860 px a pílula desce para uma segunda
   linha; abaixo de 460 px some o "Entrar", os itens ficam 12.5 px e o conteúdo dos painéis vira
   uma coluna.
 - Herói centralizado: rótulo "Aberto e gratuito", título "Aprenda IA no seu ritmo." (Sora 700,
@@ -29,7 +29,7 @@ Aparência:
   Conteúdos (cada um com rótulo mono no topo, ícones de traço âmbar em caixinhas de 34 px):
   - Cursos (560 px, 2x2): Trilhas para começar · Aulas de 15 minutos · Em três idiomas · Novos da semana.
   - Eventos (330 px, lista): Lives da semana · Áreas temáticas · Gravações.
-  - Comunidade (500 px): dois links (Comunidade VIP, INEMA.PRO) + um cartão âmbar
+  - Comunidade (500 px): dois links (Comunidade VIP, INEMA.PRO) + um cartêo âmbar
     "Tire dúvidas com quem já fez." com "ENTRAR →".
   - Ferramentas (620 px, 3 blocos): Buscas · Kits prontos · Vídeos.
   Cada link tem título Inter 600 e uma linha curta a 60%. Links reais para inema.club,
@@ -39,20 +39,20 @@ Movimento:
 1. Entrada: as manchas de luz derivam devagar (senos de 6.5 a 9 s, até 6% da tela). Menu fechado.
 2. Passar o mouse num item: o painel aparece já no tamanho do conteúdo, centrado sob o item
    (preso a 16 px das bordas da tela), surgindo em 160 ms de opacidade com escala 0.98 → 1.
-3. Ir para outro item com o painel aberto: posição x, largura, altura e a setinha seguem molas
+3. Ir para outro item com o painel aberto: posiçêo x, largura, altura e a setinha seguem molas
    (rigidez 260, amortecimento 28) até o novo conteúdo medido. O conteúdo antigo some em 180 ms
    andando 12 px para o lado de onde você saiu; o novo entra em 180 ms vindo 12 px do lado para
    onde você foi.
 4. Realce: uma pílula clara (#f3efe7 a 9%) desliza sob o item apontado com mola mais dura
-   (rigidez 420, amortecimento 34), largura e posição.
+   (rigidez 420, amortecimento 34), largura e posiçêo.
 5. Sair do menu e do painel: fecha depois de 150 ms (some em 160 ms com escala 0.98). Passar do
    item para o painel dentro desse tempo mantém aberto.
 6. Para mudar o tamanho sem animar width/height, o fundo é recortado por quatro camadas aninhadas
    com overflow hidden e cantos de 18 px, cada uma presa a um canto (superior esquerdo, superior
-   direito, inferior esquerdo, inferior direito) e movida só com translate: a interseção delas é
+   direito, inferior esquerdo, inferior direito) e movida só com translate: a interseçêo delas é
    o retângulo do painel, com os quatro cantos sempre redondos.
 7. Repouso: menu fechado, manchas derivando.
-8. Modo demonstração: um cursor fantasma percorre os quatro itens, 2 s cada (450 ms até o item,
+8. Modo demonstraçêo: um cursor fantasma percorre os quatro itens, 2 s cada (450 ms até o item,
    desce 650 ms para dentro do painel, espera, volta), sai do menu, o painel fecha, e repete.
    Para no primeiro movimento real do mouse, clique, tecla ou rolagem; com ?demo=1 nunca para.
 
@@ -64,7 +64,7 @@ Regras:
 - Animar só transform e opacity.
 - No toque, tocar no item abre e tocar de novo fecha; tocar fora fecha.
 - Teclado: Enter/Espaço abre e fecha, ← → passam entre os itens, ↓ entra no primeiro link,
-  Esc fecha e devolve o foco ao item. Itens são <button aria-expanded>; conteúdos escondidos
+  Esc fecha e devolve o foco ao item. Itens sêo <button aria-expanded>; conteúdos escondidos
   ficam inert. Foco visível de 3 px âmbar.
 - Nunca capturar a rolagem.
 - prefers-reduced-motion: sem molas e sem deriva: o painel salta direto para o tamanho e o

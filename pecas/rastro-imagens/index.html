@@ -42,7 +42,7 @@ html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font-family:
 .dig .col{position:absolute;left:0;top:0;width:100%}
 .dig .col span{display:block;height:15px;line-height:15px;text-align:center}
 
-/* cartão do rastro (vive dentro do acervo e é recortado por ele) */
+/* cartêo do rastro (vive dentro do acervo e é recortado por ele) */
 .cartao{position:absolute;left:0;top:0;width:clamp(130px,16vw,224px);aspect-ratio:4/3;margin:0;padding:0;border:0;border-radius:6px;overflow:hidden;background:#1a1612;box-shadow:0 14px 30px rgba(0,0,0,.5),0 2px 6px rgba(0,0,0,.4);cursor:zoom-in;z-index:2;will-change:transform;transform-origin:50% 50%;-webkit-tap-highlight-color:transparent}
 .cartao:focus{outline:none}
 .cartao:focus-visible{outline:3px solid var(--acc);outline-offset:4px}
@@ -55,7 +55,7 @@ html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font-family:
 .fantasma{position:fixed;left:0;top:0;width:24px;height:24px;z-index:40;pointer-events:none;opacity:0;will-change:transform,opacity}
 .fantasma svg{width:24px;height:24px}
 
-/* ampliação: abre DENTRO do acervo, nunca sobre a manchete */
+/* ampliaçêo: abre DENTRO do acervo, nunca sobre a manchete */
 .luz{position:absolute;inset:0;z-index:20;display:none}
 .luz.on{display:block}
 .veu{position:absolute;inset:0;background:rgba(11,11,13,.82);opacity:0;cursor:zoom-out}
@@ -114,14 +114,14 @@ html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font-family:
 
     <section class="zona" id="zona" aria-label="Acervo de projetos" data-xray="acervo · área fixa que recorta o rastro; nada sai dela" data-xray-tool="code">
       <div class="rotulo" aria-hidden="true"><span>Acervo</span><span class="dica" id="dica">Passe o mouse</span></div>
-      <div class="luz" id="luz" data-xray="ampliação · o cartão cresce por FLIP dentro do acervo e a legenda sobe linha a linha" data-xray-tool="code">
+      <div class="luz" id="luz" data-xray="ampliaçêo · o cartêo cresce por FLIP dentro do acervo e a legenda sobe linha a linha" data-xray-tool="code">
         <div class="veu" id="veu"></div>
         <div class="grande" id="grande"><div class="pic-g" id="picG"></div><button class="fechar" id="fecharBtn" type="button">Fechar</button><div class="legenda" id="legenda"><span class="l"><span class="t" id="legT"></span></span><span class="l"><span class="s" id="legS"></span></span></div></div>
       </div>
     </section>
   </div>
 
-  <div class="abrir" id="abrir" aria-hidden="true" data-xray="pílula Abrir · segue o ponteiro sobre um cartão" data-xray-tool="code">Abrir</div>
+  <div class="abrir" id="abrir" aria-hidden="true" data-xray="pílula Abrir · segue o ponteiro sobre um cartêo" data-xray-tool="code">Abrir</div>
 
   <div class="fantasma" id="fantasma" aria-hidden="true" data-xray="cursor fantasma · desenha um 8 dentro do acervo" data-xray-tool="code">
     <svg viewBox="0 0 24 24"><path d="M4 2.5 4 19l4.6-4.3 2.9 6.2 3-1.4-2.9-6.1H18z" fill="#f3efe7" stroke="#0b0b0d" stroke-width="1.2" stroke-linejoin="round"/></svg>
@@ -190,7 +190,7 @@ html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font-family:
 
   if (toque) {
     document.getElementById('dica').textContent = 'Toque para soltar';
-    document.getElementById('sub').innerHTML = '<b>15 projetos e cursos gratuitos</b> no INEMA.CLUB. Toque no acervo para soltar um cartão e toque nele para abrir.';
+    document.getElementById('sub').innerHTML = '<b>15 projetos e cursos gratuitos</b> no INEMA.CLUB. Toque no acervo para soltar um cartêo e toque nele para abrir.';
   }
 
   /* Z = retângulo do acervo; tudo do rastro é calculado em coordenadas locais dele */
@@ -211,7 +211,7 @@ html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font-family:
     else { CW = Math.min(224, Math.max(130, window.innerWidth * (window.innerWidth <= 720 ? 0.4 : 0.16))); CH = CW * 0.75; }
   }
   function dentro() { return P.on && P.x >= 0 && P.y >= 0 && P.x <= Z.w && P.y <= Z.h; }
-  /* o centro do cartão nunca passa da borda do acervo */
+  /* o centro do cartêo nunca passa da borda do acervo */
   function alvoX(x) { return cl(x, CW / 2 + 10, Z.w - CW / 2 - 10); }
   function alvoY(y) { return cl(y, CH / 2 + 34, Z.h - CH / 2 - 10); }
 
@@ -252,7 +252,7 @@ html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font-family:
     if (dist >= 100) { dist = 0; soltar(lastDrop, P); lastDrop = {x: P.x, y: P.y}; }
   }
 
-  /* ampliação: FLIP dentro do acervo */
+  /* ampliaçêo: FLIP dentro do acervo */
   function abrirLuz(c) {
     if (luz.aberto && luz.card === c) { fecharLuz(); return; }
     if (luz.aberto) fecharLuz();
@@ -302,7 +302,7 @@ html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font-family:
     if (luz.alvo === 0 && luz.p < 0.02) { luz.p = 0; finalizarLuz(); }
   }
 
-  /* cartões: mola para o alvo, inclinação pela velocidade, saem após 1 s */
+  /* cartões: mola para o alvo, inclinaçêo pela velocidade, saem após 1 s */
   function atualizarCartoes(dt) {
     if (parado) return;
     var mais = cards.length ? cards[cards.length - 1] : null;
@@ -342,7 +342,7 @@ html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font-family:
     unidade.style.transform = 'translate3d(0,' + (-digU.x * DIG).toFixed(2) + 'px,0)';
   }
 
-  /* pílula Abrir sobre um cartão (só com mouse) */
+  /* pílula Abrir sobre um cartêo (só com mouse) */
   function atualizarAbrir() {
     var sobre = null;
     if (!toque && dentro() && !luz.aberto) {
@@ -378,7 +378,7 @@ html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font-family:
     P.x = gx; P.y = gy; P.on = true;
     fantasmaEl.style.opacity = gOp.toFixed(3);
     fantasmaEl.style.transform = 'translate3d(' + (Z.x + gx).toFixed(1) + 'px,' + (Z.y + gy).toFixed(1) + 'px,0)';
-    if (!demoParam && toque) return; /* no celular sem demo, não abre sozinho */
+    if (!demoParam && toque) return; /* no celular sem demo, nêo abre sozinho */
     gT += dt;
     if (gT >= 8) {
       gT = 0;
@@ -389,7 +389,7 @@ html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font-family:
   }
   function pararFantasma(e) {
     if (demoParam || ghostParado || !ghostAtivo) return;
-    if (e && e.pointerType && e.pointerType !== 'mouse') return; /* toque não desliga o automático */
+    if (e && e.pointerType && e.pointerType !== 'mouse') return; /* toque nêo desliga o automático */
     if (e && e.type === 'touchstart') return;
     ghostParado = true;
     P.on = false;
@@ -402,7 +402,7 @@ html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font-family:
     P.x = e.clientX - Z.x; P.y = e.clientY - Z.y; P.on = true; acordar();
   }, {passive: true});
   document.addEventListener('pointerleave', function () { if (!ghostAtivo) P.on = false; });
-  /* toque: soltar um cartão onde a pessoa tocou (o cartão em si abre pelo click) */
+  /* toque: soltar um cartêo onde a pessoa tocou (o cartêo em si abre pelo click) */
   zona.addEventListener('pointerdown', function (e) {
     if (e.pointerType === 'mouse' || parado || luz.aberto) return;
     if (e.target.closest && e.target.closest('.cartao')) return;

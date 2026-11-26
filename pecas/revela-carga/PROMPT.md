@@ -1,11 +1,11 @@
 # Revela carga
 
-Uma tela de carregamento em que a marca INEMA, inteira desde o primeiro quadro, enche de âmbar de baixo para cima enquanto o contador vai de 000 a 100, e no fim tudo vira a transição que revela a página inicial escura.
+Uma tela de carregamento em que a marca INEMA, inteira desde o primeiro quadro, enche de âmbar de baixo para cima enquanto o contador vai de 000 a 100, e no fim tudo vira a transiçêo que revela a página inicial escura.
 
 ## Prompt
 
 ```text
-Construa uma tela de carregamento que vira transição de página: a marca INEMA aparece inteira
+Construa uma tela de carregamento que vira transiçêo de página: a marca INEMA aparece inteira
 e vai enchendo de âmbar enquanto um contador grande vai de 000 a 100; ao chegar a 100, a marca
 pulsa e some, seis colunas sobem e revelam a página inicial do INEMA.CLUB (escura), com o título
 entrando palavra por palavra e uma capivara chegando para acenar.
@@ -30,20 +30,20 @@ Aparência:
 - Linha de progresso de 2 px em âmbar, da borda esquerda até o começo do contador.
 - Rótulos mono nos cantos de cima: "INEMA.CLUB · abrindo" e "cursos gratuitos de IA".
 - Página revelada: fundo escuro (gradiente #111114 para #0b0b0d com um brilho âmbar suave
-  atrás da capivara). Barra de navegação com linha fina embaixo (marca INEMA.CLUB com ponto
+  atrás da capivara). Barra de navegaçêo com linha fina embaixo (marca INEMA.CLUB com ponto
   âmbar; Cursos, Lives, Buscas, VIP em creme 60%). Rótulo âmbar "Cursos gratuitos de IA · 2026",
   título gigante creme "Pronto quando você estiver." (Sora 800, ponto final em âmbar, até 12,5%
-  da altura), linha de apoio em creme 60%, botão "Começar agora" (pílula âmbar, texto escuro) e
-  botão secundário "Ver a abertura de novo" (contorno creme). À direita, uma capivara em SVG de
-  pé, de perfil (até 400 px), com sombra escura no chão. No desktop o texto e a capivara ficam
+  da altura), linha de apoio em creme 60%, botêo "Começar agora" (pílula âmbar, texto escuro) e
+  botêo secundário "Ver a abertura de novo" (contorno creme). À direita, uma capivara em SVG de
+  pé, de perfil (até 400 px), com sombra escura no chêo. No desktop o texto e a capivara ficam
   centralizados na altura, sem faixa vazia no topo.
 - Duas camadas de 6 colunas cobrindo a tela: uma âmbar (embaixo) e uma preta (em cima).
-- Celular (até 760 px), composição própria em pé: no carregador a marca cresce para 76% da
+- Celular (até 760 px), composiçêo própria em pé: no carregador a marca cresce para 76% da
   largura (no máximo 40% da altura) a 40% da altura, com a etapa logo abaixo, e o rótulo do
   canto direito some. Na página, a capivara vai para o MEIO da tela (até 64% da largura), de pé
-  sobre uma linha fina de chão, e o texto fica embaixo; nada de vazio no meio.
+  sobre uma linha fina de chêo, e o texto fica embaixo; nada de vazio no meio.
 
-Movimento (um relógio único t em ms; tudo é função de t):
+Movimento (um relógio único t em ms; tudo é funçêo de t):
 1. 0 a 360 ms: a marca inteira (base + traço) acende e sobe 12 px.
 2. 300 a 3000 ms: carga de 2,7 s com três pausas curtas (a curva corre, quase para em ~24%,
    ~53% e ~84%, e volta a correr). O contador, a linha (scaleX) e o nível do líquido
@@ -60,17 +60,17 @@ Movimento (um relógio único t em ms; tudo é função de t):
    capivara entra pela direita andando (pernas alternando, 1200 ms, easeOut), para com uma
    amassada (scale 1.08 x 0.91 por 260 ms, a partir dos pés) e acena com a pata da frente
    três vezes (1300 ms).
-6. Segura a página montada até 10500 ms; então as colunas descem de volta (âmbar primeiro,
+6. Segura a página montada até 10500 ms; entêo as colunas descem de volta (âmbar primeiro,
    da direita para a esquerda, depois a preta) e o ciclo recomeça em 12000 ms.
-7. Repetição: o ciclo roda em loop só até a primeira interação real (toque, clique ou tecla);
+7. Repetiçêo: o ciclo roda em loop só até a primeira interaçêo real (toque, clique ou tecla);
    depois disso a página fica montada e os links funcionam. Tocar no fundo da página ou no
-   botão "Ver a abertura de novo" repete a abertura uma vez.
-8. Modo demonstração (?demo=1): o ciclo nunca para, para gravação.
+   botêo "Ver a abertura de novo" repete a abertura uma vez.
+8. Modo demonstraçêo (?demo=1): o ciclo nunca para, para gravaçêo.
 
 Regras:
 - JavaScript puro e CSS, sem biblioteca; um único arquivo HTML; só as fontes do Google.
 - Um único requestAnimationFrame dirige tudo, pausado fora da tela (IntersectionObserver) e
-  com a aba oculta; o relógio não pula ao voltar.
+  com a aba oculta; o relógio nêo pula ao voltar.
 - Animar só transform e opacity (o líquido sobe e a onda corre por translate, o anel acende
   por opacidade, a linha cresce por scaleX).
 - Nunca capturar a rolagem; ouvintes passivos.

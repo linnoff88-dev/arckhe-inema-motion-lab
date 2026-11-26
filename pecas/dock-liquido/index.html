@@ -71,7 +71,7 @@ h1{font-family:Sora,sans-serif;font-weight:800;font-size:clamp(2.6rem,9vw,6.4rem
 
   <section class="cabeca">
     <div class="selo">INEMA.CLUB · barra de atalhos</div>
-    <h1 id="titulo" aria-live="polite" data-xray="título · cada letra sobe em cascata (34 ms) a cada troca de seção" data-xray-tool="code"></h1>
+    <h1 id="titulo" aria-live="polite" data-xray="título · cada letra sobe em cascata (34 ms) a cada troca de seçêo" data-xray-tool="code"></h1>
     <p class="sub">Estude no seu ritmo. Tudo do ecossistema INEMA num lugar só.</p>
     <p class="dica">Passe o ponteiro sobre a barra, ou use Tab e Enter.</p>
   </section>
@@ -255,7 +255,7 @@ h1{font-family:Sora,sans-serif;font-weight:800;font-size:clamp(2.6rem,9vw,6.4rem
       var r = Math.max(0, maxExtra) / sumE;
       itens.forEach(function (o) { o.sd = 1 + (o.sd - 1) * r; });
     }
-    /* slots têm largura fixa; o crescimento e o empurrão dos vizinhos são só transform */
+    /* slots têm largura fixa; o crescimento e o empurrêo dos vizinhos sêo só transform */
     itens.forEach(function (o) { o.w = base * o.sd; });
     var visTotal = fixo, unTotal = fixo + N * base;
     itens.forEach(function (o) { visTotal += o.w; });
@@ -357,7 +357,7 @@ h1{font-family:Sora,sans-serif;font-weight:800;font-size:clamp(2.6rem,9vw,6.4rem
   function desligar() { if (raf) { cancelAnimationFrame(raf); raf = 0; } }
   function acordar() { if (parado) desenhar(); else ligar(); }
 
-  /* cursor fantasma: roda até a primeira interação real (exceto ?demo=1) */
+  /* cursor fantasma: roda até a primeira interaçêo real (exceto ?demo=1) */
   var ghostAtivo = !parado, ghostParado = false, gT = 0, gFase = 0, gIdx = 0, gClicou = false, gOp = 0;
   var gPos = {x: window.innerWidth / 2, y: window.innerHeight + 40}, gOri = {x: window.innerWidth / 2, y: window.innerHeight + 40}, gDest = {x: 0, y: 0};
   var SEQ = [1, 4, 6, 2];

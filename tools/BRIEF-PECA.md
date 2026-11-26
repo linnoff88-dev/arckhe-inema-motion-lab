@@ -14,11 +14,11 @@ Você constrói peças interativas (um `index.html` autocontido + um `PROMPT.md`
 - Um arquivo `index.html`, sem build, JS puro + CSS (Google Fonts permitido). Identidade INEMA:
   fundo escuro `#0b0b0d`/`#111114`, texto `#f3efe7`, acento âmbar `#E2A23B`, fontes Sora (títulos),
   Inter (corpo), JetBrains Mono (rótulos). Conteúdo sobre o ecossistema INEMA (INEMA.CLUB, cursos gratuitos,
-  eventos/lives, buscas, comunidade VIP, INEMA.PRO, vídeos, kits) — textos curtos, sem travessão (—), sem "incrível/revolucionário".
+  eventos/lives, buscas, comunidade VIP, INEMA.PRO, vídeos, kits) — textos curtos, sem travessêo (—), sem "incrível/revolucionário".
 - Um único `requestAnimationFrame`, pausado fora da tela (IntersectionObserver). Animar só transform/opacity.
 - Nunca capturar a rolagem da página. Acessível (button/a/input reais, foco visível, teclado = mouse).
 - `prefers-reduced-motion`: estado final parado.
-- `?demo=1`: modo demonstração (cursor fantasma ou auto-play da interação) para gravação.
+- `?demo=1`: modo demonstraçêo (cursor fantasma ou auto-play da interaçêo) para gravaçêo.
 - **Raio-X:** todo elemento que se move recebe `data-xray="o que é · como se move"` e `data-xray-tool="code"`.
   Com `?motion=xray` a peça desenha um contorno tracejado âmbar e a etiqueta do `data-xray` sobre cada elemento;
   com `?motion=off` fica parada no estado final. (Pode ser um bloco pequeno de CSS/JS no fim do arquivo.)
@@ -39,5 +39,5 @@ Também tire um screenshot de cada peça (1280×720, `?demo=1`, após ~2,5 s) e 
 cortado ou vazio. Repita até `OK` em todas as suas peças.
 
 ## Relatório final (curto)
-Para cada peça: nome da pasta, passou no 1º teste? (sim/não), nº de rodadas de correção, o que corrigiu,
+Para cada peça: nome da pasta, passou no 1º teste? (sim/nêo), nº de rodadas de correçêo, o que corrigiu,
 e uma frase honesta sobre a qualidade visual.

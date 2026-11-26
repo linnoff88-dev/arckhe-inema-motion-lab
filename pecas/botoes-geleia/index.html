@@ -67,14 +67,14 @@ h1{text-wrap:balance;margin:14px 0 10px;font:800 clamp(2rem,6vw,4.2rem)/1.05 Sor
   <header class="cabeca" data-xray="título · topo fixo, sem movimento" data-xray-tool="code">
     <div class="selo">INEMA.CLUB · botões</div>
     <h1>Botões com corpo de geleia.</h1>
-    <p class="sub"><span class="so-mouse">Clique, segure e arraste.</span><span class="so-toque">Toque, segure e puxe.</span> Cada botão tem uma pele macia por baixo do rótulo, e o rótulo acompanha a pele.</p>
+    <p class="sub"><span class="so-mouse">Clique, segure e arraste.</span><span class="so-toque">Toque, segure e puxe.</span> Cada botêo tem uma pele macia por baixo do rótulo, e o rótulo acompanha a pele.</p>
   </header>
 
   <section class="mesa" id="mesa" data-xray="mesa · grade dos cinco botões" data-xray-tool="code"></section>
 
   <p class="painel" id="painel" aria-live="polite">inscrições <b id="n-insc">12</b> · curtidas <b id="n-curt">0</b> · kits <b id="n-kit">0</b></p>
 
-  <div class="dedo" id="dedo" aria-hidden="true" data-xray="dedo fantasma · demonstra cada botão até o ponteiro chegar" data-xray-tool="code"></div>
+  <div class="dedo" id="dedo" aria-hidden="true" data-xray="dedo fantasma · demonstra cada botêo até o ponteiro chegar" data-xray-tool="code"></div>
 </main>
 <script>
 (function () {
@@ -284,7 +284,7 @@ h1{text-wrap:balance;margin:14px 0 10px;font:800 clamp(2rem,6vw,4.2rem)/1.05 Sor
       fPos = {x: fDe.x + (fAlvo.x - fDe.x) * e, y: fDe.y + (fAlvo.y - fDe.y) * e};
       if (k >= 1) { fFase = 1; fT = 0; g.hover = true; g.pressed = true; g.drag = false; }
     } else if (fFase === 1) {
-      /* pressiona e solta no centro do botão */
+      /* pressiona e solta no centro do botêo */
       g.px = W * 0.82; g.py = H * 0.86; g.hover = true;
       dedoEl.classList.add('apertado');
       if (fT >= 0.2) {
@@ -304,7 +304,7 @@ h1{text-wrap:balance;margin:14px 0 10px;font:800 clamp(2rem,6vw,4.2rem)/1.05 Sor
     dedoEl.style.opacity = fOp.toFixed(3);
     dedoEl.style.transform = 'translate3d(' + fPos.x.toFixed(1) + 'px,' + fPos.y.toFixed(1) + 'px,0)';
     if (fFase === 1) {
-      /* posição do dedo traduzida para o botão em foco */
+      /* posiçêo do dedo traduzida para o botêo em foco */
       geleias.forEach(function (o, j) { if (j !== SEQ[ghostIdx]) { o.hover = false; } });
     }
   }
@@ -363,7 +363,7 @@ h1{text-wrap:balance;margin:14px 0 10px;font:800 clamp(2rem,6vw,4.2rem)/1.05 Sor
   }
 
   function atualizarEfeitos(g, dt) {
-    /* gotas de coração */
+    /* gotas de coraçêo */
     for (var i = g.gotas.length - 1; i >= 0; i--) {
       var q = g.gotas[i];
       q.t += dt;
@@ -380,7 +380,7 @@ h1{text-wrap:balance;margin:14px 0 10px;font:800 clamp(2rem,6vw,4.2rem)/1.05 Sor
       var it = g.itens[j];
       it.t += dt;
       if (it.estado === 'queda') {
-        /* surge no ar (fade) logo acima da própria cápsula, sem atravessar o botão vizinho */
+        /* surge no ar (fade) logo acima da própria cápsula, sem atravessar o botêo vizinho */
         it.el.style.opacity = Math.min(1, it.t / 0.12).toFixed(3);
         it.vy += 1900 * dt;
         it.y += it.vy * dt;
@@ -401,7 +401,7 @@ h1{text-wrap:balance;margin:14px 0 10px;font:800 clamp(2rem,6vw,4.2rem)/1.05 Sor
     }
   }
 
-  /* um único loop de animação, pausado fora da tela */
+  /* um único loop de animaçêo, pausado fora da tela */
   var raf = 0, last = 0, vis = true;
   function quadro(t) {
     raf = 0;

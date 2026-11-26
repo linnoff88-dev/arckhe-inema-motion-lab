@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Revela carga</title>
-<meta name="description" content="Tela de carregamento com a marca INEMA que enche de âmbar e vira a transição para a página.">
+<meta name="description" content="Tela de carregamento com a marca INEMA que enche de âmbar e vira a transiçêo para a página.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@500&family=Sora:wght@600;800&display=swap" rel="stylesheet">
@@ -66,7 +66,7 @@
   .mascote-caixa { position: relative; height: 100%; display: flex; align-items: center; justify-content: center; min-width: 0; }
   .mascote { width: min(100%, 400px); height: auto; overflow: visible; will-change: transform; }
 
-  /* ---------- colunas da transição ---------- */
+  /* ---------- colunas da transiçêo ---------- */
   .colunas { position: absolute; inset: 0; display: grid; grid-template-columns: repeat(6, 1fr); pointer-events: none; }
   .colunas span { display: block; height: 100%; will-change: transform; margin-right: -1px; }
   .col-ambar { z-index: 2; }
@@ -112,8 +112,8 @@
     transform-origin: 0 50%; transform: scaleX(0); will-change: transform, opacity;
   }
 
-  /* celular: composição própria, em pé. Carregador com a marca grande no terço de cima e a etapa
-     logo abaixo; página com a capivara ocupando o meio (de pé sobre uma linha de chão) e o texto embaixo. */
+  /* celular: composiçêo própria, em pé. Carregador com a marca grande no terço de cima e a etapa
+     logo abaixo; página com a capivara ocupando o meio (de pé sobre uma linha de chêo) e o texto embaixo. */
   @media (max-width: 760px) {
     .canto-dir { display: none; }
     .marca { --lado: min(76vw, 40vh); top: 40%; }
@@ -485,7 +485,7 @@ window.MOTION = (() => {
 
   /* ===== relógio, laço e pausa fora da tela ===== */
   let t = parado ? QUADRO_FINAL : 0;
-  let repetir = true;   // até a primeira interação real; ?demo=1 repete sempre
+  let repetir = true;   // até a primeira interaçêo real; ?demo=1 repete sempre
   const comeca = () => { t = 0; };
   function avancar(dt) {
     t += dt;
@@ -509,7 +509,7 @@ window.MOTION = (() => {
   if ('IntersectionObserver' in window) new IntersectionObserver(es => { naTela = es[0].isIntersecting; ligar(); }).observe(palco);
   document.addEventListener('visibilitychange', ligar);
 
-  // interação real: para de repetir (a página fica disponível); toque no fundo repete
+  // interaçêo real: para de repetir (a página fica disponível); toque no fundo repete
   const interagiu = () => { if (!demo) repetir = false; };
   window.addEventListener('pointerdown', interagiu, { passive: true });
   window.addEventListener('keydown', interagiu, { passive: true });

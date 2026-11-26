@@ -149,7 +149,7 @@
     <div class="label brand">INEMA<b>.CLUB</b></div>
     <div>
       <div class="label time swap" aria-hidden="true">
-        <span class="d">06:40 · manhã</span><span class="n">22:15 · noite</span>
+        <span class="d">06:40 · manhê</span><span class="n">22:15 · noite</span>
       </div>
       <h1 class="swap" aria-live="polite">
         <span class="d" id="t-day">Bom dia<span class="dot">.</span></span>
@@ -369,10 +369,10 @@
   // ---------- estado ----------
   var night = root.getAttribute('data-theme') === 'night';
   var p = night ? 1 : 0;            // 0 dia, 1 noite
-  var dirNight = night;             // direção da última troca
+  var dirNight = night;             // direçêo da última troca
   var W_DUR = 1800, P_DUR = 2200;
   var wFrom = night ? 180 : 0, wTo = wFrom, wT = 1; // progresso 0..1
-  var clock = 0;                    // ms de animação acumulados (pausa junto com o loop)
+  var clock = 0;                    // ms de animaçêo acumulados (pausa junto com o loop)
 
   function reduce() { return mqReduce.matches; }
 
@@ -465,7 +465,7 @@
     }
   }
 
-  // ---------- modo demonstração ----------
+  // ---------- modo demonstraçêo ----------
   var CYCLE = 7600, CLICK1 = 1000, CLICK2 = 4600;
   var demoOn = !reduce() || demoParam;
   var demoE = 0, demoOffset = 0, demoFade = 1, demoStopping = false, lastC = -1, ringT = 1e9;

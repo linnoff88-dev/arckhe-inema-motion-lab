@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Navegação com pulo</title>
+<title>Navegaçêo com pulo</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Sora:wght@600;700&display=swap" rel="stylesheet">
 <script>
-  // ?demo=1 demonstração contínua · ?motion=off parado no estado final · ?motion=xray raio-X
+  // ?demo=1 demonstraçêo contínua · ?motion=off parado no estado final · ?motion=xray raio-X
   (function () {
     var q = location.search, m = (q.match(/[?&]motion=([a-z]+)/) || [])[1] || '';
     window.MOTION = { demo: /[?&]demo=1\b/.test(q), off: m === 'off', xray: m === 'xray' };
@@ -38,7 +38,7 @@
   }
   .label b { color: var(--fg); font-weight: 500; }
 
-  /* ---------- barra de navegação ---------- */
+  /* ---------- barra de navegaçêo ---------- */
   .nav-wrap { position: relative; padding-top: 86px; margin-top: 4px; max-width: 100%; }
   nav {
     position: relative; display: flex; gap: 2px; padding: 5px;
@@ -117,7 +117,7 @@
 </head>
 <body>
 <main id="piece">
-  <div class="label">INEMA<b>.CLUB</b> · navegação</div>
+  <div class="label">INEMA<b>.CLUB</b> · navegaçêo</div>
 
   <div class="nav-wrap" id="navWrap">
     <nav id="nav" aria-label="Seções do INEMA">
@@ -185,7 +185,7 @@
 
   var CONTENT = [
     ['Cursos gratuitos', 'Trilhas curtas para aprender IA do zero, no seu ritmo.'],
-    ['Lives toda semana', 'Ao vivo, com perguntas, gravação e material de apoio.'],
+    ['Lives toda semana', 'Ao vivo, com perguntas, gravaçêo e material de apoio.'],
     ['Ache em segundos', 'Busque aulas, guias e kits em todo o INEMA.'],
     ['Comunidade VIP', 'Grupo fechado no Telegram para quem quer ir mais fundo.']
   ];
@@ -344,7 +344,7 @@
     else if (!jump || jump.t >= 100) {
       var aS = -380 * sq - 14 * sqV; sqV += aS * sdt; sq += sqV * sdt;
     }
-    // respiração
+    // respiraçêo
     var breathe = R ? 0 : 0.018 * Math.sin(clock / 520);
 
     // braço apontando
@@ -384,7 +384,7 @@
       Math.abs(pl.v) + Math.abs(pr.v) < 0.5 && Math.abs(sq) < 0.002 && Math.abs(sqV) < 0.02;
   }
 
-  // ---------- modo demonstração ----------
+  // ---------- modo demonstraçêo ----------
   var STEP = 2300;
   var demoOn = !reduce() || DEMO, demoE = 0, demoFade = 1, demoStopping = false, ringT = 1e9;
   var gFrom = null, gPos = null, nextClick = 1400, tourIdx = 0;
@@ -444,7 +444,7 @@
     last = now; clock += dt;
     render(dt);
     renderDemo(dt);
-    // com movimento reduzido e sem demonstração, o loop dorme quando tudo assenta
+    // com movimento reduzido e sem demonstraçêo, o loop dorme quando tudo assenta
     if (!(reduce() && !demoOn && settled())) wake();
   }
   function running() { return visible && !document.hidden; }

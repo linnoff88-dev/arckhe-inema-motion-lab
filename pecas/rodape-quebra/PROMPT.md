@@ -29,7 +29,7 @@ Aparência:
   e os links em texto corrido (Inter, creme a 55%). Link ganho fica creme cheio com um ponto
   âmbar à esquerda. Linha fina e a barra final: "© 2026 INEMA.CLUB · conteúdo aberto e
   gratuito" e "Os links funcionam mesmo sem jogar".
-- Celular (até 760 px): composição própria. A arena ocupa o espaço que sobra (mínimo 320 px)
+- Celular (até 760 px): composiçêo própria. A arena ocupa o espaço que sobra (mínimo 320 px)
   e os tijolos ficam mais altos (30 a 40 px) e com margens menores para preencher a largura;
   bandejas em 2 x 2; barra final empilhada. Nada de vazio solto no meio da tela.
 
@@ -46,9 +46,9 @@ Movimento:
    se refaz.
 6. Perder a bola custa uma vida; sem vidas, a parede volta inteira e os links ganhos se apagam.
 7. Piloto automático: prevê onde a bola cai (refletindo nas paredes), mira com um desvio
-   aleatório e segue com atraso (suavização exponencial, velocidade máxima). Ao mover o mouse
+   aleatório e segue com atraso (suavizaçêo exponencial, velocidade máxima). Ao mover o mouse
    sobre o jogo, arrastar o dedo, tocar ou usar as setas, a pessoa assume; depois de 6 s parada, o piloto volta.
-8. Modo demonstração (?demo=1): o piloto joga sempre e ignora o ponteiro.
+8. Modo demonstraçêo (?demo=1): o piloto joga sempre e ignora o ponteiro.
 
 Regras:
 - JavaScript puro e canvas 2D, sem biblioteca de física; um único arquivo HTML; só as fontes
